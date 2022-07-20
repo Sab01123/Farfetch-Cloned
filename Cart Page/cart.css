@@ -1,0 +1,46 @@
+body{
+    background-color: #F6F6F6;
+    font-family: "Farfetch Basis", "Helvetica Neue", Arial, sans-serif;;
+}
+
+.wrapper{
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    ;
+}
+
+figure{
+    width: 32%;
+    float: left;
+    margin: 0;
+}
+figcaption{
+    text-align: center;
+}
+.hover-animation{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 10% auto;
+ 
+    /* box-shadow: 5px 5px 15px rgba(0,0,0,0.6); */
+}
+.hover-animation img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    transition: all 0.7s ease-in-out;
+}
+.hover-animation img.img-front:hover{
+    opacity: 0;
+    cursor: pointer;
+}
+
+#heading{
+    text-align: center;
+}
+
