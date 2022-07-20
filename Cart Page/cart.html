@@ -6,19 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart section</title>
     <link rel="stylesheet" href="cart.css">
+
 </head>
 
 <body>
-    <h1 id="heading">SHOPPING BAG</h1>
+    <p id="heading">SHOPPING BAG</p>
     <div id="main">
-        <div id="items"></div>
-        <div id="summary"></div>
+        <div class="items">
+            <table>
+                <tbody id="body">
+
+                </tbody>
+            </table>
+        </div>
+        <div id="summary">
+            <h3>Summary</h3>
+            <div class="cash">
+                <p>Subtotal</p>
+                <div style="display: flex;">
+                    <p>$&nbsp;</p>
+                    <p id="totalprice"></p>
+                </div>
+            </div>
+            <div class="cash">
+                <p>Delivery</p>
+                <p id="delivery">$ 600</p>
+            </div>
+            <hr>
+            <div class="cash">
+                <p>Total</p>
+                <p id="totalcash"></p>
+            </div>
+            <button id="checkout">Go To Checkout</button>
+        </div>
     </div>
 
 
     <!-- Recommandation section -->
 
-    <h1>Recommandation</h1>
+    <div id="rec">
+        <p style="font-size: 23px;">Recommandation</p>
+        <button id="shop">Shop Now</button>
+    </div>
+
     <div class="wrapper">
         <figure>
             <div class="hover-animation">
@@ -94,3 +124,4 @@
 </body>
 
 </html>
+<script src="cart.js"></script>
