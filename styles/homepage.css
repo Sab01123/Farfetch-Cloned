@@ -1,0 +1,207 @@
+ 
+  body,
+  html {
+    font-family: var(--fontNormal);
+  }
+
+  #allDepartments>h2{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 32px;
+  }
+  #departments{
+    /* border: 1px solid; */
+    display: flex;
+    width: 95%;
+    margin: auto;
+    margin-top: 2%;
+  }
+  #a{
+    /* pointer-events:none; */
+    color: black;
+    margin-bottom:110px;
+    text-align: center;
+    text-decoration: none;
+
+  }
+  #a>h2{
+    margin-top: -35%;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  #a>h2:hover{
+    cursor: pointer;
+  }
+
+  
+  #departments>div{
+    width: 100%;
+    /* border: 1px solid; */
+    margin: 15px;
+
+  }
+  img{
+    width: 100%;
+  }
+  #featTrend{
+    /* border: 1px solid; */
+    width: 95%;
+    margin: auto;
+    display: flex;
+    margin-top: 12%;
+    
+  }
+  .featuredSection{
+    width: 48%;
+    margin: 20px;
+  }
+  .featuredSection>h4{
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+  .trendSection{
+    width: 48%;
+    margin: 20px;
+  }
+  .trendSection>h4{
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+  
+  #container-guide {
+    display: flex;
+    margin: 2% 3%;
+    justify-content: space-between;
+  }
+  
+  
+  .box {
+    width: 75%;
+    border: 1px solid rgba(100, 100, 100, 0.06);
+    transition: 0.2s;
+  }
+  .box i {
+    font-size: 24px;
+  }
+  .box img {
+    width: 7%;
+  }
+  .box:hover {
+    background-color: rgb(248, 248, 248);
+  }
+  
+  #app {
+    margin-top: 8%;
+    margin: 8% auto 0 auto;
+    width: 54%;
+  }
+  #app p:nth-child(2),
+  #app p:nth-child(4) {
+    font-weight: 400;
+  }
+  #app a {
+    color: black;
+    text-decoration: underline;
+  }
+  #app a:hover {
+    color: rgb(73, 72, 72);
+  }
+  #app input:nth-child(1) {
+    width: 70%;
+    display: inline-block;
+    border-radius: 10px;
+    border: 1px solid #777;
+    padding: 3%;
+  }
+  #app #btn {
+    border-radius: 10px;
+    color: white;
+    padding: 10px 15px;
+    display: inline;
+    background-color: black;
+  }
+  #app #btn:hover {
+    opacity: 0.7;
+  }
+  #app .email-input {
+    width: 100%;
+  }
+  #app .divider {
+    height: auto;
+    width: 1px;
+    margin: 0 5%;
+    background-color: rgba(172, 172, 172, 0.317);
+  }
+  #app .QR {
+    text-align: left;
+    width: 60%;
+  }
+  #app .QR img {
+    width: 55%;
+  }
+  
+  #about-section {
+    background-color: #1d1b1b;
+    color: white;
+    margin-top: 3%;
+  }
+  #about-section #top-sections {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+  }
+  #about-section #top-sections p {
+    cursor: pointer;
+    line-height: 15px;
+  }
+  #about-section #top-sections .heading {
+    margin: 0 0 5vh 0;
+  }
+  #about-section .icons {
+    display: flex;
+  }
+  #about-section .icons img {
+    margin-right: 3vh;
+    cursor: pointer;
+  }
+  #about-section #bottom-section {
+    padding: 10px;
+  }
+  #about-section #bottom-section p {
+    margin: 0px;
+    font-size: 14px;
+  }
+  
+  @media all and (max-width: 768px) {
+    .app-section > a > img {
+      width: 90%;
+    }
+  }
+  @media all and (max-width: 1000px) {
+    #container-guide {
+      display: block;
+    }
+  
+    .box {
+      margin: 3%;
+      width: 100%;
+    }
+  
+    #app {
+      width: 70%;
+    }
+    #app input:nth-child(1) {
+      width: 60%;
+    }
+  
+    .sub-section {
+      padding: 1vh;
+    }
+    .sub-section div {
+      margin: 5vh 0;
+    }
+  
+    #social-icons > img {
+      margin: 0 2% 2%;
+    }
+  }
