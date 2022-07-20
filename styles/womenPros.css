@@ -1,0 +1,48 @@
+#head_1 {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    margin: auto;
+    color: grey;
+  }
+  #head_1>h3>a {
+    text-decoration: none;
+    color: grey;
+  }
+  #heading{
+    text-align: center;
+    line-height: 1px;
+  }
+  #proBody{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+  }
+  #proFilters{
+    border: 1px solid grey;
+    width: 22%;
+    /* height: 100px; */
+    /* display: block; */
+    /* margin: auto; */
+  }
+  #proBox{
+    border: 1px solid blue;
+    width: 77%;
+   /* height: 100px; */
+  }
+  #priceSort,#CategoryFilter,#brandFilter{
+    margin: 10px 0px;
+    width: 70%;
+    height: 40px;
+    border-radius: 5px;
+  }
+  #proFilters>h3{
+    text-align: center;
+    color: rgb(129, 116, 116);
+  }
+  #fil{
+    display: flex;
+  }
+  #fil>img{
+    width: 15%;
+  }
