@@ -1,0 +1,317 @@
+/* @font-face {
+    font-family: "Nimbus Sans Extended D";
+    src: url(https://cdn-static.farfetch-contents.com/cdn-content/fonts/NimbusSansExtD-Bold.woff2) format("woff2"), url(https://cdn-static.farfetch-contents.com/cdn-content/fonts/NimbusSansExtD-Bold.woff) format("woff");
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Nimbus Roman D";
+    src: url(https://cdn-static.farfetch-contents.com/cdn-content/fonts/NimbusRomanD-Regular.woff2) format("woff2"), url(https://cdn-static.farfetch-contents.com/cdn-content/fonts/NimbusRomanD-Regular.woff) format("woff");
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Farfetch Basis";
+    src: url(https://cdn-static.farfetch-contents.com/cdn-content/fonts/FarfetchBasis-Regular.woff2) format("woff2"), url(https://cdn-static.farfetch-contents.com/cdn-content/fonts/FarfetchBasis-Regular.woff) format("woff");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Farfetch Basis";
+    src: url(https://cdn-static.farfetch-contents.com/cdn-content/fonts/FarfetchBasis-Bold.woff2) format("woff2"), url(https://cdn-static.farfetch-contents.com/cdn-content/fonts/FarfetchBasis-Bold.woff) format("woff");
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+  }
+  :root {
+    --fontNormal: "Farfetch Basis", "Helvetica Neue", Arial, sans-serif;
+  } */
+
+.material-symbols-sharp {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 600,
+  'GRAD' 0,
+  'opsz' 48
+}
+  body,
+  html {
+    font-family: var(--fontNormal);
+  }
+#head{
+      height: 50px;
+    border-bottom: 1px solid rgb(195, 193, 193);
+    display: flex;
+    justify-content: space-around;
+
+}
+#head>div{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+#big{
+    display: flex;
+    margin-top: -170px;
+    border: 1px solid green;
+}
+  #req{
+    margin-left: 50px;
+    margin-top: 80px;
+    width: 60%;
+    /* border: 1px solid red; */
+
+  }
+  #req2{
+    width: 25%;
+    /* border: 1px solid red; */
+    margin-top: 50px;
+    height: 300px;
+  }
+.input
+{
+     display: flex;
+}
+.input >div{
+    margin-right: 20px;
+}
+ input{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(139, 136, 136);
+    margin-bottom: 20px;
+    display: block;
+ } 
+#select{
+    width: 630px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(139, 136, 136);
+}
+
+.address{
+    width: 630px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(139, 136, 136);
+}
+.input>div>select{
+    width: 300px;
+    height:40px ;
+    border-radius: 5px;
+    border: 1px solid rgb(139, 136, 136);
+}
+
+
+#checkbox{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+.billing{
+    display: flex;
+    text-align: center;
+    margin: 0;
+}
+.billing>p{
+    margin-top: 1px;
+    margin-left: 20px;
+}
+
+
+/* #placed{
+    width: 300px;
+    height: 50px;
+    margin: 0;
+    margin-left: 30px;
+
+    vertical-align: middle;
+    background-color: rgb(28, 28, 28);
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 400;
+
+} */
+
+/* svg{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+} */
+
+ .div{
+    display: flex;
+    align-items: center;
+}
+.div>h3{
+     margin-left: 10px;
+     margin-right: 10px;
+     font-weight: 100;
+     font-family: sans-serif;
+}
+
+#logo{
+    height: 30px;
+    margin: 0 250px;
+} 
+
+#kapda{
+    width: 35px;
+    height: 40px;
+    margin-right: 90px;
+    /* border: 1px solid red; */
+}
+
+#smalldiv{
+    display: flex;
+     /*margin: 30px; */
+   margin-top: 30px;
+}
+
+ /* #product{
+   width: 60%;
+   
+  
+} */
+
+#head{
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: -5px;
+    margin-bottom: -35px;
+    border: none;
+}
+
+/* #delivery{
+    display: flex;
+}
+#totalprice{
+    display: flex;
+}
+#delivery1{
+    margin-left: 80px;
+}
+#price{
+    margin-left: 90px;
+} */
+
+
+
+/* @media all and (max-width: 768px) { */
+    
+    
+/* .address{
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(139, 136, 136);
+} */
+/* input{
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(139, 136, 136);
+    margin-bottom: 20px;
+    display: block;
+ } */
+ /* #select{
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(139, 136, 136);
+} */
+/* .input>div>select{
+    width: 200px;
+    height:40px ;
+    border-radius: 5px;
+    border: 1px solid rgb(139, 136, 136);
+} */
+
+#head{
+    height: 50px;
+  border-bottom: 1px solid rgb(195, 193, 193);
+  display: flex;
+  justify-content: space-around;
+
+}
+#head>div{
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+}
+  /* } */
+
+/* **************************************************** */
+.progress_bar{
+    margin: 100px auto;
+}
+.progress_bar img{
+    width: 30px;
+    /* margin-bottom: -80px; */
+}
+ul{
+    text-align: center;
+}
+ul li{
+    display: inline-block;
+    width: 300px;
+    position: relative;
+}
+.dot{
+    font-size: 100px;
+    margin: -19px;
+    margin-top: -70px;
+}
+ul li .dot::after{
+    content: '';
+    background: #ccc;
+    width: 310px;
+    height: 3px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: -1;
+}
+ul li:nth-child(1) .dot::after{
+    background-color: black;
+}
+ul li:first-child .dot::after{
+    width: 205px;
+    left: 150px;
+}
+ul li:last-child .dot::after{
+    width: 150px;
+}
+.p_name
+{
+    font-size: 17px;
+}
+ul li:nth-child(1) .p_name{
+    font-weight: bolder;
+}
+
+/* ************************************* */
+#adrs{
+    width: 75%;
+    border: 1px solid red;
+    margin-top: -50px;
+    padding-top: 0px;
+    height: 200px;
+}
+
+/* ************footer************* */
+#navbar{
+    border: 1px solid pink;
+    height: 50px;
+}
+#footer{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    color: white;
+}
