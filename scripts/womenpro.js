@@ -1485,4 +1485,32 @@ let womens_Product = [
   
   ];
 
-  localStorage.setItem("womens_Products",JSON.stringify(womens_Product))
+
+
+  displayData(womens_Product)
+
+  function displayData(data){
+  document.querySelector("#proBox").innerHTML = ""
+  data.map(function(ele){
+    let img1 = document.createElement("img")
+    let img2 = document.createElement("img")
+    let brand = document.createElement("h3")
+    let category = document.createElement("h3")
+    let desc = document.createElement("p")
+    let price = document.createElement("h3")
+    let type = document.createElement("p")
+  
+    img1.src = ele.img1
+    img2.src = ele.img2
+    brand.textContent = ele.brand
+    category.textContent = ele.category
+    desc.textContent = ele.desc
+    price.textContent = ele.price
+    type.textContent = ele.type
+    
+    let box = document.createElement("div")
+    box.append(img1,img2,brand,category,desc,price,type)
+  
+    document.querySelector("#proBox").append(box)
+  })
+  }
