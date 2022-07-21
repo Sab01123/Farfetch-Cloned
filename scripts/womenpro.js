@@ -1495,21 +1495,24 @@ let womens_Product = [
     let img1 = document.createElement("img")
     let img2 = document.createElement("img")
     let brand = document.createElement("h3")
-    let category = document.createElement("h3")
+    let category = document.createElement("p")
+    category.style.fontSize = "20px"
+    category.style.fontStyle = "italic"
     let desc = document.createElement("p")
-    let price = document.createElement("h3")
+    let price = document.createElement("h4")
     let type = document.createElement("p")
+    type.style.fontWeight = "bold"
   
     img1.src = ele.img1
     img2.src = ele.img2
     brand.textContent = ele.brand
     category.textContent = ele.category
     desc.textContent = ele.desc
-    price.textContent = ele.price
-    type.textContent = ele.type
+    price.textContent = `Price : ${ele.price}`
+    type.textContent = `Type : ${ele.type}`
     
     let box = document.createElement("div")
-    box.append(img1,img2,brand,category,desc,price,type)
+    box.append(img1,brand,category,price,type)
   
     document.querySelector("#proBox").append(box)
   })
