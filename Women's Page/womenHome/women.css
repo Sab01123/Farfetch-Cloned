@@ -5,6 +5,7 @@
     margin: auto;
     display: flex;
     margin-top: 5%;
+    gap: 20px;
 }
 #write{
     margin-top: 15%;
@@ -137,5 +138,76 @@ figure{
 #p{
     font-family: Arial, Helvetica, sans-serif;
     margin-top: -20px;
+}
+#pic{
+   /* border: 1px solid; */
+   margin-right: -5%;
+   gap: 20px;
+}
+#threDive{
+    width: 95%;
+    height: 500px;
+    /* border: 1px solid; */
+    margin: auto;
+    display: flex;
+    margin-top: 3%;
+}
+#threDive>div{
+    width: 100%;
+    gap: 20px;
+}
+#threDive>div>img{
+    width: 95%;
+}
+#twoPic{
+    width: 95%;
+    height: 600px;
+    margin: auto;
+    margin-top: 4%;
+    display: flex;
+}
+#twoPic>div{
+    width: 90%;
+    margin: 15px;
+
+}
+#twoPic>div>img{
+    width: 100%;
+}
+
+#h2{
+    justify-content: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    margin-top: 15%;
+    margin-left: 4%;
+    
+}
+#btn2{
+    display: flex;
+    margin: auto;
+    background-color:white;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    font-size: 20px;
+    justify-content: flex-end;
+    margin-right: 4%;
+    margin-top: -4%;
+}
+#twoPic2{
+    width: 95%;
+    height: 600px;
+    margin: auto;
+    margin-top: 20%;
+    display: flex;
+}
+#twoPic2>div{
+    width: 90%;
+    margin: 15px;
+
+}
+#twoPic2>div>img{
+    width: 100%;
 }
 
