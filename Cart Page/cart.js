@@ -1,78 +1,11 @@
-let arr = [
-  {
-    image_url:
-      "https://cdn-images.farfetch-contents.com/17/18/51/67/17185167_37027698_600.jpg",
-    name: "MEN'S HERON PRESTON T-SHIRT ",
-    brand: "HERON PRESTON",
-    category: "T-SHIRT",
-    price: 445,
-    strikedoffprice: 999,
-    Symbol: "₹",
-  },
-  {
-    image_url:
-      "https://cdn-images.farfetch-contents.com/17/45/47/28/17454728_37431510_600.jpg",
-    name: " Wales Bonner Power geometric-print trousers",
-    brand: "WALES BONNER",
-    category: "PANT",
-    price: 801,
-    strikedoffprice: 1099,
-    Symbol: "₹",
-  },
-  {
-    image_url:
-      "https://cdn-images.farfetch-contents.com/17/35/10/06/17351006_37528125_600.jpg",
-    name: "Alexander McQueen intarsia-pattern cardigan",
-    brand: "WALES BONNER",
-    category: "SHIRT",
-    price: 399,
-    strikedoffprice: 799,
-    Symbol: "₹",
-  },
-  {
-    image_url:
-      "https://cdn-images.farfetch-contents.com/17/35/10/06/17351006_37528125_600.jpg",
-    name: "Alexander McQueen intarsia-pattern cardigan",
-    brand: "WALES BONNER",
-    category: "SHIRT",
-    price: 399,
-    strikedoffprice: 799,
-    Symbol: "₹",
-  },
-  {
-    image_url:
-      "https://cdn-images.farfetch-contents.com/17/35/10/06/17351006_37528125_600.jpg",
-    name: "Alexander McQueen intarsia-pattern cardigan",
-    brand: "WALES BONNER",
-    category: "SHIRT",
-    price: 399,
-    strikedoffprice: 799,
-    Symbol: "₹",
-  },
-  {
-    image_url:
-      "https://cdn-images.farfetch-contents.com/17/35/10/06/17351006_37528125_600.jpg",
-    name: "Alexander McQueen intarsia-pattern cardigan",
-    brand: "WALES BONNER",
-    category: "SHIRT",
-    price: 399,
-    strikedoffprice: 799,
-    Symbol: "₹",
-  },
-];
-
-localStorage.setItem("itemsData", JSON.stringify(arr));
-
 let data = JSON.parse(localStorage.getItem("itemsData"));
 
-var body = document.body;
 let allRowTotal = 0;
 showData(data);
 var price = 0;
 var total = 0;
-
+console.log(data);
 function showData(data) {
-  console.log(data);
   let tbody = document.querySelector("tbody");
   tbody.innerHTML = null;
   sum = 0;
@@ -99,14 +32,6 @@ function showData(data) {
     p2.innerText = elem.name;
     td2.append(p1, p2);
 
-    // td 4
-    var td4 = document.createElement("td");
-    let price = document.createElement("h4");
-    let duties = document.createElement("p");
-    duties.innerHTML = "(import duties included)";
-    price.innerText = "$ " + elem.price;
-    td4.append(price, duties);
-
     // td 3
     var td3 = document.createElement("td");
     let icon = document.createElement("img");
@@ -120,12 +45,18 @@ function showData(data) {
     td3.append(size);
     var increase = document.createElement("button");
     var decrease = document.createElement("button");
+    increase.className = "btn";
+    decrease.className = "btn";
     var quantity = document.createElement("p");
     var count = 1;
 
-    /*---all row total calculation */
-    allRowTotal += elem.price * count;
-    console.log(allRowTotal);
+    // td 4
+    var td4 = document.createElement("td");
+    let showprice = document.createElement("h4");
+    let duties = document.createElement("p");
+    duties.innerHTML = "(import duties included)";
+    showprice.innerText = "$ " + elem.price;
+    td4.append(showprice, duties);
 
     /*increase decrease button */
     quantity.innerText = 1;
@@ -140,7 +71,8 @@ function showData(data) {
 
       price = elem.price * count;
       quantity.innerText = count;
-      td4.innerText = price;
+      showprice.innerText = "$" + price;
+      td4.prepend(showprice);
 
       incresedisplayTotal(singlePrice);
     });
@@ -158,10 +90,16 @@ function showData(data) {
         let singlePrice = elem.price;
 
         sum -= elem.price;
-        td4.innerText = price;
+        showprice.innerText = "$" + price;
+        td4.prepend(showprice);
         decreseDisplayTotal(singlePrice);
       }
     });
+
+    /*---all row total calculation */
+    allRowTotal += elem.price * count;
+    // console.log(allRowTotal);
+
     let wish = document.createElement("p");
     wish.innerText = "🤍" + "Add to wishlist";
     td3.append(quantity, increase, decrease, wish);
@@ -171,13 +109,11 @@ function showData(data) {
       "https://icon-library.com/images/svg-close-icon/svg-close-icon-4.jpg";
 
     icon.addEventListener("click", function () {
-      deleteData(index);
+      deleteData(elem, index);
     });
 
     tr.append(td1, td2, td4, td3);
-
     tbody.append(tr);
-    // displayTotalPrice()
   });
 }
 
@@ -207,10 +143,10 @@ function decreseDisplayTotal(sPrice) {
   totalcash.innerText = `USD $ ${cPrice + 600}`;
 }
 
-function deleteData(index) {
+function deleteData(elem, index) {
   data.splice(index, 1);
   console.log(data);
   localStorage.setItem("itemsData", JSON.stringify(data));
   showData(data);
-  //   window.location.reload();
+  window.location.reload();
 }
