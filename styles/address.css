@@ -75,14 +75,14 @@
     margin-bottom: 20px;
     display: block;
  } 
-#select{
+#country{
     width: 630px;
     height: 40px;
     border-radius: 5px;
     border: 1px solid rgb(139, 136, 136);
 }
 
-.address{
+#address{
     width: 630px;
     height: 40px;
     border-radius: 5px;
@@ -345,3 +345,4 @@ ul li:nth-child(1) .p_name{
 #opt{
     padding: 2%;
 }
+
