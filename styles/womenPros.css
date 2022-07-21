@@ -1,7 +1,10 @@
 * {
   margin: 0;
   padding: 0;
-  width: 98%;
+  /* width: 98%; */
+  /* margin: auto; */
+}
+body{
   margin: auto;
 }
 #head_1>h3{
@@ -35,22 +38,45 @@ width: 7%;
   display: flex;
 }
 #brandProBox{
+  border: 1px solid;
 display: flex;
 margin-top: 10px;
+justify-content: space-between;
 }
 #brands{
-  width: 20%;
+  
+  width: 15%;
+  border: 2px solid blue;
 }
 /* this  */
-#proBox{
-  width: 80%;
-}
+
 
 .filter_category{
   height: 45px;
+  width: 50%;
   border: 0;
   font-size: 18px;
 }
 .filter_category>option{
-  font-size: 25px;
+  font-size: 22px;
+}
+#proBox{
+  width: 84%;
+  display: grid;
+  border: 1px solid red;
+ grid-template-columns: repeat(3,1fr);
+ grid-template-rows: auto;
+ gap: 15px;
+}
+#proBox>div>img{
+  width: 100%;
+}
+#fillbrandbody{
+  border: 1px solid yellow;
+   width: 96%; 
+  margin: auto;
+}
+#brands>select{
+  display: block;
+
 }
