@@ -6,65 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>women Products</title>
     <link rel="stylesheet" href="./styles/womenPros.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
      <!-- Import Navbar -->
 
     <!-- womens Product Page -->
-    <div id="womensProductPage">
+  
         <!-- headings -->
       <div id="head_1">
-        <h3><a href="">Women Home /</a></h3>
-        <h3><a href="">Bags /</a></h3>
-        <h3>Tote Bags</h3>
+        <h3><a href="">Women Home</a></h3>
       </div>
       <div id="heading">
         <h1>DESIGNER TOTE BAGS FOR WOMEN</h1>
       </div>
-     <!-- body -->
-<!-- left side filters and right side products -->
+    
+                              
 <div id="proBody">
-    <div id="proFilters">
-        <!-- filter by brand name  -->
-        <div id="fil">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEX///8AAAAwMDDMzMy4uLjv7+/m5ub7+/u3t7fg4OBISEhYWFi9vb3Jycnz8/PPz8+dnZ1oaGiWlpZ1dXUrKyuJiYlRUVGpqakmJibV1dWUlJTa2toNDQ0VFRWCgoKhoaFiYmIcHBw3NzdycnJAQEBcDANeAAADrUlEQVR4nO3dgVLqMBCF4VgFBBQVRQFFgcv7P+MdGccxkJa02c3ZdM73BPxTnaVJWpwjIiIiIiIiIiIiIiIqz3g+qSyYzMcqfcPplR3ToXzgHTrqxI104D266My9bOAM3RMwEy38ROcEfEoGzjbonICd5EV8QNcEPQgWfqFjgr4EC9fomKC1YOEjOiboUbDQ3jT8JjkRB+iYoIFgoXtG1wQ8Swa6ITonQPjL9y2658ytbKC9v1PZv9GjCbrJM5EPNPavqHAH7Nw1uuqPa41AS99sJL/NeLbosh9brUA3ekG3HS1HaoVujI470llL/HGDrrtSGPU+/IKN6PJMCHrwa4x632AHDdyJ3jKFYVellEa9Dzn41Ua97wkW+JQn0I32oMC94qj3oQa/6qj3YbbaxDfUmiwAgYucgc69Zg98zRvoBrl3ozYZRr1vlblQcqMp0lvWwLf8gXkHf65RfyLf4K+yjXpfvvVFlbXDGLkG/x0qMNfgzzzqfTkGf+5R75st1QOXsieDWtMf/CtsoP7gh4x6n+7G4j903reDYuABHXekOfhho96nd9oGOOp9c6VAyWNdiXSOgE/RWX+oDH7R86PJ3hUK39FRPvkTRcrbhO1JbywqnAhKJTv49+icgMGHYOBH9rXDGJKDX/hxESlyG4tzdEodqcFvadT7RpVI4Ato7TCGzOA3Nup9EoPf3Kj3pQ9+9RNBqVJPFOmfCEqVuLFoc9T70o4SZzkRlCrlQTfJx9EUdd9YBG0Tttb5KLHm4V9ZXU8UZTwRlKrbxqKZtcMYXTYWoduE7bUf/PZHva/18+0bU2uHMdpuLAJOBKVqt7FYyKj3tRn8pYz6E/F3/BX6o3YUv7FoZJuwvdjBX9So98WtL2Z6xEBF3NMnBQ6KX3F3w0Xc9dZgIQvtYyEL7WMhC+1jIQvtYyEL7WMhC+1jIQvtYyEL7WMhC+1jIQvtYyEL7WMhC+1jIQvtYyEL7WMhC+1jIQvtYyEL7et/YdwLXUoujHukpOTC/l/DuEeeSy50UU+SFl0Y9eBT0YWjmBeAFV0Y9WxX2YUxv2NWeGFEYumFl98dVXzhxatYfuGlxB4UXkjsQ2FzYi8KGxP7UdiU2JPChqHRl8L6q9ibwtqraPSFs13UXMWCX4txJnwVe3QNa65ise9uCQok7tCfSdh5YpGviGpymrhEfyB5J4mm34vckbcSDv85JxXj318Z2BbwUt1uVotDVU3WBb3Ok4iIiIiIiIiIiIiIKNl/Feg9sZcuaRgAAAAASUVORK5CYII=" alt="">
-        <h3>Filter</h3>
-        </div>
-        <select name="" id="brandFilter" onchange="filterBrand()">
-            <option value="">Select Brand</option>
-            <option value="PALM ANGLE">Palm Angel</option>
-            <option value="HERON PRESTON">Heron Preston</option>
-            <option value="WALES BONNER">Wales Bonner</option>
-            <option value="REEBOK">Reebok</option>
-            <option value="BALENCIAGA">Balenciaga</option>
-            <option value="OFF WHITE">Off-White</option>
-            <option value="MAD PARIS">Mad Paris</option>
-            <option value="GUCCI">Gucci</option>
-          </select>
-    <br>
-          <!-- filter by category  -->
-          <select name="" id="CategoryFilter" onchange="filterCategory()">
-            <option value="">Select Category</option>
-            <option value="JACKET">Jacket</option>
-            <option value="T-SHIRT">T-Shirt</option>
-            <option value="PANT">Pant</option>
-            <option value="SHIRT">Shirt</option>
-            <option value="SHOES">Shoes</option>
-            <option value="BAG">Bag</option>
-            <option value="WATCH">Watch</option>
-            <option value="SUNGLASSES">Sunglasses</option>
-          </select>
-<br>
-           <!-- sorting and filter select html  -->
-    <div id="sortFilter">
-        <select name="" id="priceSort" onchange="handlePriceSort()">
-          <option value="">Price Sort</option>
-          <option value="high">High-To-Low</option>
-          <option value="low">Low-To-High</option>
-        </select>
+  
+   <div id="fillsort">
+    <div>Filter <span class="material-symbols-outlined">
+      chevron_right
+      </span> </div>
+    <div><pre>Sort by</pre><span class="material-symbols-outlined">
+      expand_more
+      </span></div>
+   </div>
+   <div id="brandProBox">
+    <div id="brands">
+    
+      <select name="" class="filter_category"><span class="material-symbols-outlined">
+        expand_more
+        </span>
+        <option value="">Brand</option>
+        <option value="">Versace</option>
+        <option value="">KNWLS</option>
+        <option value="">Gucci</option>
+        <option value="">Balenciaga</option>
+      </select>
+      <select name="" class="filter_category"><span class="material-symbols-outlined">
+        expand_more
+        </span>
+        <option value="">Color</option>
+        <option value="">White</option>
+        <option value="">Black</option>
+        <option value="">Green</option>
+        <option value="">Pink</option>
+      </select>
+      <select name="" class="filter_category"><span class="material-symbols-outlined">
+        expand_more
+        </span>
+        <option value="">Size</option>
+        <option value="">Versace</option>
+        <option value="">KNWLS</option>
+        <option value="">Gucci</option>
+        <option value="">Balenciaga</option>
+      </select>
+      <select name="" class="filter_category"><span class="material-symbols-outlined">
+        expand_more
+        </span>
+        <option value="">Price</option>
+        <option value="">Versace</option>
+        <option value="">KNWLS</option>
+        <option value="">Gucci</option>
+        <option value="">Balenciaga</option>
+      </select>
+ 
+
     </div>
-</div>
     <div id="proBox"></div>
+   </div>
 
 </div>
 </body>
