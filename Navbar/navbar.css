@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+#nav1{
+    height: 0.3%;
+    background-color: #ff2d44;
+    display: flex;
+    justify-content: center;
+    color:white;
+    align-items: center;
+}
+#nav2 .items{
+    text-decoration: none;
+    color: black;
+}
+
+#nav2{
+
+    height: 20%;
+
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+#nav2 .items{
+    flex-grow: 0.1;
+    
+    display: flex;
+    align-items:center;
+    margin-left: 8%;
+    margin-right: -5%;
+    text-decoration: none;
+    text-decoration-color: black;
+    color: black;
+  
+}
+#nav2 .items a{
+    text-decoration: none;
+    text-decoration-color: black;
+}
+#nav2 .fh{
+    flex-grow: 4;
+    
+    margin-left: 24%;
+    margin-right: 29%;
+    display: flex;
+    align-items:center;
+    text-decoration: none;
+}
+
+#nav2 .logom{
+    flex-grow: 1;
+    display: flex;
+    align-items:left;
+    justify-content: space-evenly;
+    text-align: left;
+
+    font-size: 99%;
+    margin-left: -40%;
+}
+#nav2 .logom a{
+    text-decoration: none;
+    color:rgb(73, 71, 71);
+    font-weight: bolder;
+    
+}
+
+
+
+#nav3{
+    padding: 2% 9% 4% 7.8%;
+    height: 70px;
+    width: 77%;
+    font-size: 99%;
+
+    
+    display: flex;
+   
+    align-items: left;
+    text-decoration: none;
+}
+#nav3 .items{
+    flex-grow: 1;
+    background-color: grey; 
+    display: flex;
+    align-items:center;
+    font-size: 99%;
+  
+}
+
+#nav3 .logom{
+    margin-left: 240%;
+    text-align: left;
+    padding-right: -40%;
+    
+    
+
+}
+
+.nav-container 
+        {
+            display: flex;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+
+        .nav-container>div 
+        {
+            padding: 10px 10px;
+        }
+
+        .nav-container>div:hover 
+        {
+            background-color:
+            #ff2d44 !important;
+            color: white !important;
+        }
+
+        .nav-screen 
+        {
+            position: absolute;
+            left: 241px;
+            top: 141px;
+            display: none;
+            z-index: 10;
+            background-color: white;
+        }
+
+        .nav-screen-parentContainer 
+        {
+            display: grid;
+            grid-gap: 30px;
+            grid-template-columns: repeat(3, 1fr);
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+        }
+
+        .nav-screen-parentContainer>div>div 
+        {
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+
+        .__0377-slider
+        {
+            padding: 10px;
+        }
+
+        .modal-body > div > div
+        {
+            padding-top: 15px;
+        }
