@@ -1,48 +1,56 @@
-#head_1 {
-    display: flex;
-    justify-content: space-between;
-    width: 20%;
-    margin: auto;
-    color: grey;
-  }
-  #head_1>h3>a {
-    text-decoration: none;
-    color: grey;
-  }
-  #heading{
-    text-align: center;
-    line-height: 1px;
-  }
-  #proBody{
-    border: 1px solid red;
-    display: flex;
-    justify-content: space-around;
-  }
-  #proFilters{
-    border: 1px solid grey;
-    width: 22%;
-    /* height: 100px; */
-    /* display: block; */
-    /* margin: auto; */
-  }
-  #proBox{
-    border: 1px solid blue;
-    width: 77%;
-   /* height: 100px; */
-  }
-  #priceSort,#CategoryFilter,#brandFilter{
-    margin: 10px 0px;
-    width: 70%;
-    height: 40px;
-    border-radius: 5px;
-  }
-  #proFilters>h3{
-    text-align: center;
-    color: rgb(129, 116, 116);
-  }
-  #fil{
-    display: flex;
-  }
-  #fil>img{
-    width: 15%;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  width: 98%;
+  margin: auto;
+}
+#head_1>h3{
+  text-align: center;
+  font-family:  Verdana, Geneva, Tahoma, sans-serif;
+ 
+}
+#head_1{
+  margin-bottom: 15px;
+}
+#head_1 > h3 > a {
+ text-decoration: none;
+ color: grey;
+
+}
+#heading {
+text-align: center;
+}
+#fillsort{
+display: flex;
+justify-content: space-between;  
+
+font-size: 18px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#fillsort>div:nth-child(2){
+width: 7%;
+}
+#fillsort>div,
+#brands>h3{
+  display: flex;
+}
+#brandProBox{
+display: flex;
+margin-top: 10px;
+}
+#brands{
+  width: 20%;
+}
+/* this  */
+#proBox{
+  width: 80%;
+}
+
+.filter_category{
+  height: 45px;
+  border: 0;
+  font-size: 18px;
+}
+.filter_category>option{
+  font-size: 25px;
+}
