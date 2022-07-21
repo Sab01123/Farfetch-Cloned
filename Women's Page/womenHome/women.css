@@ -41,10 +41,11 @@ a{
 #bestsell{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
+    font-weight: 70;
     margin: auto;
     margin-top: 7%;
-    width: 70%;
+    width: 60%;
+    font-size: 30px;
     
 }
 
@@ -70,6 +71,7 @@ figure{
     height: 95%;
     width: 100%;
     margin: 10% auto;
+   
  
     /* box-shadow: 5px 5px 15px rgba(0,0,0,0.6); */
 }
@@ -85,7 +87,7 @@ figure{
     cursor: pointer;
 }
 #button{
-    margin-top: 13%;
+    margin-top: 15%;
 }
 #img{
     width: 95%;
@@ -132,7 +134,7 @@ figure{
 }
 #h4{
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 300;
+    font-weight: 70;
 }
 #p{
     font-family: Arial, Helvetica, sans-serif;
