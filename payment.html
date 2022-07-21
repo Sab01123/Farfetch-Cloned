@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles/address.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    
+    <link rel="stylesheet" href="../mucho-angle-7709/styles/payment.css">
 </head>
 <body>
     <div id="main">
@@ -58,6 +56,48 @@
                     </ul>
                 </div>
                 <div id="big">
+                    <h2>Select your payment method</h2>
+                    <div id="boxx">
+                        <div id="paytm"><img src="https://www.logo.wine/a/logo/PayPal/PayPal-Logo.wine.svg" alt=""></div>
+                        <div id="card_method"><p>Debit or credit card</p></div>
+                    </div>
+                    <div id="req">
+                        <h3>CARD DETAILS</h3>
+                        <p>Cardholder name</p>
+                        <input type="text" class="chname">
+                        <div class="input">
+                            <div>
+                                <p>Card Number*</p>
+                                <input type="number" id="cardno">
+                            </div>
+                            <div>
+                                <p>Expiration date*</p>
+                                <input type="text" name="" id="exp">
+                            </div>
+                        </div>
+                        <div>
+                            <p>Security code*</p>
+                            <input type="number" id="code_no">
+                        </div>
+                        <div class="billing">
+                            <input type="checkbox" name="" id="checkbox">
+                            <p>Save payment details</p>
+                        </div>
+
+                    </div>
+                    
+                </div>
+                <h3>Billing Address</h3>
+                <div id="bad">
+                    
+                    <div id="bill_add">
+                        <div class="container"></div>
+                        <div><a id="edit" href="address.html">Edit</a></div>
+                    </div>
+                    
+                </div>
+                <div id="ana"><a href="address.html">Add New Address</a></div>
+                <!-- <div id="big">
                     <div id="req">
                         <h3>Add your delivery address</h3>
                         <p>
@@ -87,8 +127,8 @@
 
                         </select>
                         <p>Address</p>
-                        <input type="text" id="address">
-                        <!-- <input type="text" name="" class="address"> -->
+                        <input type="text" class="address">
+                        <input type="text" name="" class="address">
                         <div class="input">
                             <div>
                                 <p>City*</p>
@@ -100,7 +140,7 @@
                             </div>
                         </div>
                         <p>Postal or zip code *</p>
-                        <input type="text" id="code">
+                        <input type="text" class="code">
                         <div class="input">
                             <div>
                                 <p>Country Calling Code *</p>
@@ -129,7 +169,7 @@
                 
                     </div>
                     
-                </div>
+                </div> -->
             </div>
             <!-- <div id="box-2"> -->
                 <div id="req2">
@@ -165,11 +205,6 @@
             </div>
         </div>
     </div>
-    
-    
-    
-    
-        
 </body>
 </html>
-<script src="../mucho-angle-7709/scripts/address.js"></script>
+<script src="../mucho-angle-7709/scripts/payment.js"></script>

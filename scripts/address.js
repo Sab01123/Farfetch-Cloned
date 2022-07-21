@@ -1,21 +1,42 @@
 let data2 = JSON.parse(localStorage.getItem("total"));
 
-let btn = document.getElementById("savebtn").addEventListener("click",function(){
-    let first = document.getElementById("first").value
-    let last = document.getElementById("last").value
+document.querySelector("button").addEventListener("click", myfun)
 
-    let state= document.getElementById("state").value
-    let city = document.getElementById("city").value
-    let phone = document.getElementById("phone").value
-    if(first !="" && last!="" && city!="" && state != "" && city != "" && phone !=""){
-      
-    //   window.location.href="../payment.html"
-   }
-   else{
+
+
+function myfun(event) {
+    event.preventDefault()
+    //console.log("hello")
+
+    let obj1 = {
+     firstname : document.querySelector("#firstname").value,
+      lastname :document.querySelector("#lastname").value,
+      country: document.querySelector("#country").value,
+      state: document.querySelector("#state").value,
+      city: document.querySelector("#city").value,
+      code : document.querySelector("#code").value,
+     address : document.querySelector("#address").value,
+     phone: document.querySelector("#phone").value,
      
-     alert("Please Fill all the information")
     }
-  })
+    console.log(obj1)
+   //checkout.push(obj1)
+
+   localStorage.setItem("addressdata",JSON.stringify(obj1))
+   window.location.href = "payment.html"
+
+}
+
+
+// let btn = document.getElementById("savebtn").addEventListener("click",function(){
+//     let first = document.getElementById("first").value
+//     let last = document.getElementById("last").value
+
+//     let state= document.getElementById("state").value
+//     let city = document.getElementById("city").value
+//     let phone = document.getElementById("phone").value
+    
+//   })
   
   let data = JSON.parse(localStorage.getItem("cartData"));
  
