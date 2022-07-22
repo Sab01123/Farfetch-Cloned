@@ -20,10 +20,18 @@ function myfun(event) {
      
     }
     console.log(obj1)
-   //checkout.push(obj1)
 
    localStorage.setItem("addressdata",JSON.stringify(obj1))
-   window.location.href = "payment.html"
+  //  window.location.href = "payment.html"
+
+  if(obj1.firstname =="" && obj1.lastname=="" && obj1.city=="" && obj1.state == "" && obj1.phone ==""){
+      
+    alert("Please Fill all the information")
+ }
+ else{
+   
+  window.location.href="../mucho-angle-7709/payment.html"
+  }
 
 }
 
