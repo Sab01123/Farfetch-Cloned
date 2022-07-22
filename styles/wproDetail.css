@@ -1,0 +1,41 @@
+#details{
+    display: flex;
+
+}
+#image{
+    width: 65%;
+    border: 4px solid black;
+    display: flex;
+}
+#details>div>img{
+    width: 50%;
+}
+#information{
+    width: 35%;
+}
+#addbutton{
+    display: flex;
+    width: 90%;
+    margin: auto;
+
+    justify-content: space-between;
+    border:  1px solid grey;
+}
+#addbutton>button:nth-child(1){
+    background-color: black;
+    color: white;
+    height: 50px;
+    font-weight: bold;
+width: 64%;
+}
+
+#addbutton>button:nth-child(2){
+    width: 33%;
+    height: 50px;
+    font-size: 17px;
+    border: 1px solid black;
+    background-color: white;
+
+    color: black;
+}
+
