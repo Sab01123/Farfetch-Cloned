@@ -1,0 +1,213 @@
+
+.material-symbols-sharp {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 600,
+    'GRAD' 0,
+    'opsz' 48
+  }
+    body,
+    html {
+      font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+    }
+  #head{
+        height: 50px;
+      border-bottom: 1px solid rgb(195, 193, 193);
+      display: flex;
+      justify-content: space-around;
+  
+  }
+  #head>div{
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+  }
+ .div{
+    display: flex;
+    align-items: center;
+}
+.div>h3{
+     margin-left: 10px;
+     margin-right: 10px;
+     font-weight: 100;
+     font-family: sans-serif;
+}
+
+#logo{
+    height: 30px;
+    margin: 0 250px;
+} 
+ #select{
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(139, 136, 136);
+}
+.opt{
+    background-color: rgb(214, 214, 214);
+    width: 400px;
+    height: 40px;
+}
+
+
+  /* *********progress bar********* */
+  .progress_bar{
+    margin: 10px auto;
+    /* border: 1px solid blue; */
+}
+.progress_bar img{
+    width: 30px;
+    /* margin-bottom: -80px; */
+}
+ul{
+    text-align: center;
+}
+ul li{
+    display: inline-block;
+    width: 300px;
+    position: relative;
+}
+.dot{
+    font-size: 100px;
+    margin: -19px;
+    margin-top: -70px;
+}
+ul li .dot::after{
+    content: '';
+    background: #ccc;
+    width: 310px;
+    height: 3px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: -1;
+}
+ul li:nth-child(1) .dot::after{
+    background-color: black;
+}
+ul li:nth-child(2) .dot::after{
+  background-color: black;
+}
+ul li:nth-child(3) .dot::after{
+    background-color: black;
+  }
+ul li:first-child .dot::after{
+    width: 205px;
+    left: 150px;
+}
+ul li:last-child .dot::after{
+    width: 150px;
+}
+.p_name
+{
+    font-size: 17px;
+}
+ul li:nth-child(1) .p_name{
+    font-weight: bolder;
+}
+ul li:nth-child(2) .p_name{
+  font-weight: bolder;
+}
+ul li:nth-child(3) .p_name{
+    font-weight: bolder;
+  }
+
+  h1{
+    text-align: center;
+  }
+ .tq{
+    color: green;
+    font-size: 40px;
+  }
+  .ship_tag{
+    font-size: 25px;
+  }
+  #shipdiv{
+    text-align: center;
+    width: 90%;
+    height: 100px;
+    /* border: 2px solid; */
+    box-sizing: border-box;
+    padding: 16px;
+    padding-left: 200px;
+    font-size: 19px;
+    color: rgb(107, 107, 107);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#orderdatadiv{
+    width: 89%;
+    height: 70px;
+    display: flex;
+    /* border: 2px solid rgb(209, 28, 58); */
+    display: flex;
+    text-align: center;
+    margin: auto;
+}
+#orderno, #date{
+    width: 305px;
+    height: 60px;
+    /* border: 1.3px solid orange; */
+    display: flex;
+    text-align: center;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+#displaytv1{
+    width: 200px;
+    height: 70px;
+    font-size: 15px;
+    color: black;
+    margin-bottom: -10px;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border: none;
+    background-color: white;
+}
+#displaytv2{
+    width: 200px;
+    height: 70px;
+    font-size: 15px;
+    color: black;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border: none;
+    background-color: white;
+}
+#orderdatadiv>div>p{
+    font-size: 19px;
+    font-weight: 400;
+    color: black;;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#spanimg{
+    width: 95px;
+    height: 85px;
+}
+#snapname>p{
+    font-size: 48px;
+    font-weight: 400;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: -74px;
+}
+#sm{
+    margin: auto;
+    width: 150px;
+    height: 30px;
+    background-color: black;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    color: white;
+    font-size: 20px;
+    margin-top: 60px;
+    /* font-weight: bolder; */
+}
+#sm>a{
+    text-decoration: none;
+    color: white;
+}
