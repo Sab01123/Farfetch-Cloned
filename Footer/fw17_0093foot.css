@@ -1,0 +1,90 @@
+#fup{
+   
+    width: 80%;
+    margin-left: 10%;
+    height: 99%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 2% 2% 2% 2%;
+}
+#fup1{
+   
+    width: 30%;
+    height: 50%; 
+    text-align: center;
+    margin-top: 1.5%;
+   
+}
+#fup2{
+   
+    width: 30%;
+    height: 50%;
+    text-align: center;
+}
+#fup3{
+    
+    width: 30%;
+    height: 50%; 
+    text-align: center;
+}
+#fmid{
+    margin: 3% 2% 2% 2%;
+    padding: 2% 2% 2% 2%;
+   
+    width: 55%;
+    text-align: center;
+    margin-left: 25%;
+
+
+}
+#fmid2{
+   
+   
+    width: 55%;
+    text-align: center;
+    margin-left: 27%;
+    display: flex;
+    padding: 2% 2% 2% 3%;
+
+}
+#qrcode{
+    display: grid;
+    padding-left: 30%;
+}
+
+#lnav{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    height: 90%;
+    background-color:#222222;
+}
+#lnav>div{
+   
+    padding: 20px;
+    color:white;
+}
+
+#lnav>div:nth-child(1) a,#lnav>div:nth-child(2) a{
+    color:white;
+    text-decoration: none;
+    line-height: 1.5;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding-left:-20% ;
+}
+
+#lnav>div:nth-child(1) ul,#lnav>div:nth-child(2) ul{
+    list-style: none;
+}
+#qrcode{
+    
+        border-left: 1px solid rgb(197, 189, 189);
+        height: 200px;
+        padding-left: 10%;
+        margin-left: 18%;
+    
+}
+#lnav>div>h4{
+    margin-left: 9%;
+}
