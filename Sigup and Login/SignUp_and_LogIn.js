@@ -46,7 +46,10 @@ loginbtn.addEventListener("click", function () {
   let obj = JSON.parse(localStorage.getItem("userData"));
   let email = document.querySelector("#loginemail").value;
   let pass = document.querySelector("#loginpass").value;
-  if (email != obj.email) {
-    alert("User does not Exist!");
+  if (email != obj.email) alert("User does not Exist⛔");
+  else if (pass != obj.pass) alert("Wrong Credentials❌");
+  else {
+    alert("Login Successful😀");
+    document.location.href = "../index.html";
   }
 });
