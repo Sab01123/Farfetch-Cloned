@@ -1,228 +1,249 @@
 let womens_Product = [
-    {
-      id: 101,
-      img1: "https://cdn-images.farfetch-contents.com/18/57/61/18/18576118_40083381_1000.jpg",
-      img2: "https://cdn-images.farfetch-contents.com/18/57/61/18/18576118_40083379_1000.jpg",
-      brand: "Versace",
-      category: "patterned cropped top",
-      desc: "Nodding to Versace’s bold aesthetic, this top grabs attention due to its colourful print. Detailed with a bustier-style neckline, this piece is finished with Medusa plaques on the straps for a recognisable look.",
-      price: "554",
-      type: "clothing",
-    },
-    {
-      id: 167,
-      img1: "https://cdn-images.farfetch-contents.com/17/45/20/01/17452001_36181736_1000.jpg",
-      img2: "https://cdn-images.farfetch-contents.com/17/45/20/01/17452001_36181740_1000.jpg",
-      brand: "Balenciaga",
-      category: "mini Lucite Pagoda shoulder bag",
-      desc: "This Moon mini bag from EÉRA is characterised by a box design in white patent leather. The accessory is finished with a signature silver-tone clip at the handle.",
-      price: "1308",
-      type: "bags",
-    },
-    {
-      id: 128,
-      img1: "https://cdn-images.farfetch-contents.com/18/03/77/02/18037702_39542617_1000.jpg",
-      img2: "https://cdn-images.farfetch-contents.com/18/03/77/02/18037702_39543580_1000.jpg",
-      brand: "KNWLS",
-      category: "Serpent pointed-toe boots",
-      desc: "Founded by sisters Nina and Gvantsa Macharashvili, in 2012, MACH & MACH blends Georgian style with Italian craftsmanship. Made from a leopard-print satin, these square-toe mules are crafted from leather and highlighted with encrusted double bow embellishments on top for a bolder look.",
-      price: "200",
-      type: "shoes",
-    },
-    {
-      id: 196,
-      img1: "https://cdn-images.farfetch-contents.com/17/53/01/28/17530128_37789989_1000.jpg",
-      img2: "https://cdn-images.farfetch-contents.com/17/53/01/28/17530128_37789992_1000.jpg",
-      brand: "Valentino Garavani",
-      category: "Vlogo plaque bag set",
-      desc: "This make-up bag designed by Valentino Garavani is made from high-quality pebbled black leather in a structured box shape. Finished with gold-tone hardware, this accessory boasts the iconic VLogo plaque adorning the front.",
-      price: "4250",
-      type: "accessories",
-    },
-    {
-      id: 145,
-      img1: "https://cdn-images.farfetch-contents.com/17/77/48/62/17774862_39584451_1000.jpg",
-      img2: "https://cdn-images.farfetch-contents.com/17/77/48/62/17774862_39584448_1000.jpg",
-      brand: "MACH & MACH",
-      category: "double-bow crystal-embellished mules",
-      desc: "Put your best foot forward in these Super-Star low-top sneakers from Golden Goose. Designed with the label's iconic distressing, they'll slot into your existing wardrobe with ease. Don't say we didn't warn you.",
-      price: "2007",
-      type: "shoes",
-    },
+  {
+    id: 101,
+    img1: "https://cdn-images.farfetch-contents.com/18/57/61/18/18576118_40083381_1000.jpg",
+    img2: "https://cdn-images.farfetch-contents.com/18/57/61/18/18576118_40083379_1000.jpg",
+    brand: "Versace",
+    category: "patterned cropped top",
+    desc: "Nodding to Versace’s bold aesthetic, this top grabs attention due to its colourful print. Detailed with a bustier-style neckline, this piece is finished with Medusa plaques on the straps for a recognisable look.",
+    price: "554",
+    type: "clothing",
+    color: "blue",
+  },
+  {
+    id: 167,
+    img1: "https://cdn-images.farfetch-contents.com/17/45/20/01/17452001_36181736_1000.jpg",
+    img2: "https://cdn-images.farfetch-contents.com/17/45/20/01/17452001_36181740_1000.jpg",
+    brand: "Balenciaga",
+    category: "mini Lucite Pagoda shoulder bag",
+    desc: "This Moon mini bag from EÉRA is characterised by a box design in white patent leather. The accessory is finished with a signature silver-tone clip at the handle.",
+    price: "1308",
+    type: "bags",
   
-    {
-      id: 188,
-      img1: "https://cdn-images.farfetch-contents.com/14/08/75/46/14087546_22670609_1000.jpg",
-      img2: "https://cdn-images.farfetch-contents.com/14/08/75/46/14087546_22670616_1000.jpg",
-      brand: "Dolce & Gabbana",
-      category: "jewel belt",
-      desc: "Looking for that finishing glamorous touch to your outfit? Dolce & Gabbana are here to help you secure your look together with this grey jewel belt that has been crafted from and Italian cotton blend and has a charming bow detail on the front. Featuring a stretch fit and metallic threading.",
-      price: "2513",
-      type: "accessories",
-    },
   
-    {
-      id: 146,
-      img1: "https://cdn-images.farfetch-contents.com/15/52/16/90/15521690_27736891_1000.jpg",
-      img2: "https://cdn-images.farfetch-contents.com/15/52/16/90/15521690_27736892_1000.jpg",
-      brand: "MACH & MACH",
-      category: "double-bow crystal-embellished mules",
-      desc: "Put your best foot forward in these Super-Star low-top sneakers from Golden Goose. Designed with the label's iconic distressing, they'll slot into your existing wardrobe with ease. Don't say we didn't warn you.",
-      price: "2099",
-      type: "shoes",
-    },
-    {
-      id: 181,
-      img1: "https://cdn-images.farfetch-contents.com/14/56/20/53/14562053_22355242_1000.jpg",
-      img2: "https://cdn-images.farfetch-contents.com/14/56/20/53/14562053_22355244_1000.jpg",
-      brand: "Gucci",
-      category: "black fur scarf",
-      desc: "It’s quirky, but so glamorous. This fox fur scarf from Gucci will have everyone asking about your style. This piece was made for you. Featuring a natural finish and a regular length.",
-      price: "3913",
-      type: "accessories",
-    },
-    {
-      id: 131,
-      img1: "https://cdn-images.farfetch-contents.com/18/13/36/96/18133696_39868697_1000.jpg",
-      img2: "https://cdn-images.farfetch-contents.com/18/13/36/96/18133696_39868696_1000.jpg",
-      brand: "Versace",
-      category: "Medusa 100 platform sandals",
-      desc: "These pumps from Alexander McQueen are crafted from soft black leather and feature sparkling silver-tone hardware. The pair are placed atop a 105mm stiletto heel for added drama. ",
-      price: "1300",
-      type: "shoes",
-    },
-    {
-      id: 155,
-      img1: "https://cdn-images.farfetch-contents.com/17/68/06/43/17680643_38679475_1000.jpg",
-      img2: "https://cdn-images.farfetch-contents.com/17/68/06/43/17680643_38676839_1000.jpg",
-      brand: "Versace",
-      category: "La Medusa small tote bag",
-      desc: "A fresh silhouette from Bottega Veneta's SS22 collection, this Toyin shoulder bag is crafted from brushed calf leather in an acid-green hue.",
-      price: "2000",
-      type: "bags",
-    },
-    {
-      id: 324,
-      img1: "https://cdn-images.farfetch-contents.com/17/59/89/14/17598914_37415168_1000.jpg",
-      img2: "https://cdn-images.farfetch-contents.com/17/59/89/14/17598914_37415169_1000.jpg",
-      brand: "Tory Burch",
-      category: "Roxanne Double T ring",
-      desc: "The Roxanne line-up from Tory Burch offers a timeless aesthetic. This ring is presented in gold-tone brass with a sparkling crystal embellishment.",
-      price: "208",
-      type: "jewelry",
-    },
-    {
-      id: 148,
-      img1: "https://cdn-images.farfetch-contents.com/14/54/01/99/14540199_24231303_1000.jpg",
-      img2: "https://cdn-images.farfetch-contents.com/14/54/01/99/14540199_24231313_1000.jpg",
-      brand: "Bottega Veneta",
-      category: "BV Lido 120mm Intrecciato sandals",
-      desc: "If there's one thing these black sandals teach us, it is that what they say is totally true: less is more. And Dolce & Gabbana is not afraid to shoe(w) it. Featuring a branded insole, an open toe, an ankle strap with a side buckle fastening and a high embellished heel.",
-      price: "1900",
-      type: "shoes",
-    },
-    {
-      id: 168,
-      img1: "https://cdn-images.farfetch-contents.com/15/29/41/62/15294162_27743172_1000.jpg",
-      img2: "https://cdn-images.farfetch-contents.com/15/29/41/62/15294162_27743174_1000.jpg",
-      brand: "Bottega Veneta",
-      category: "BV Jodie shoulder bag",
-      desc: "Have visions of glorious fashion weaving into your dreams each night? Bottega Veneta turns fantasy into a reality with this BV Jodie Intrecciato small shoulder bag that is ready to slip into your hand and have you feeling on cloud nine.",
-      price: "7828",
-      type: "bags",
-    },
-    {
-      id: 103,
-      img1: "https://cdn-images.farfetch-contents.com/17/59/06/83/17590683_37698878_1000.jpg",
-      img2: "https://cdn-images.farfetch-contents.com/17/59/06/83/17590683_37698899_1000.jpg",
-      brand: "Off-White",
-      category: "logo-print cropped cotton T-shirt",
-      desc: "Off-White s SS22 collection comprises soft nude hues and understated branded details. Presented in a muted tonal colourway, this cropped T-shirt is printed with the label's logo on the front'",
-      price: "512",
-      type: "clothing",
-    },
-    {
-      id: 182,
-      img1: "https://cdn-images.farfetch-contents.com/14/62/86/58/14628658_22878683_1000.jpg",
-      img2: "https://cdn-images.farfetch-contents.com/14/62/86/58/14628658_22878684_1000.jpg",
-      brand: "Brunello Cucinelli",
-      category: "snake-effect belt",
-      desc: "Pink leather snake-effect belt from Brunello Cucinelli featuring a front buckle fastening, an adjustable fit and silver-tone hardware.",
-      price: "4060",
-      type: "accessories",
-    },
+    color:"white" },
+  {
+    id: 128,
+    img1: "https://cdn-images.farfetch-contents.com/18/03/77/02/18037702_39542617_1000.jpg",
+    img2: "https://cdn-images.farfetch-contents.com/18/03/77/02/18037702_39543580_1000.jpg",
+    brand: "KNWLS",
+    category: "Serpent pointed-toe boots",
+    desc: "Founded by sisters Nina and Gvantsa Macharashvili, in 2012, MACH & MACH blends Georgian style with Italian craftsmanship. Made from a leopard-print satin, these square-toe mules are crafted from leather and highlighted with encrusted double bow embellishments on top for a bolder look.",
+    price: "200",
+    type: "shoes",
   
-    {
-      id: 184,
-      img1: "https://cdn-images.farfetch-contents.com/17/81/79/03/17817903_38152214_1000.jpg",
-      img2: "https://cdn-images.farfetch-contents.com/17/81/79/03/17817903_38153459_1000.jpg",
-      brand: "Saint Laurent",
-      category: "Becky quilted wallet on chain",
-      desc: "In typical Saint Laurent style, the Becky shoulder bag showcases an enduring leather-made silhouette bound to stand the test of time. A quilted-effect design is accented with a gold-hued YSL front plaque that adds to the timeless feel.",
-      price: "3206",
-      type: "accessories",
-    },
-    {
-      id: 313,
-      img1: "https://cdn-images.farfetch-contents.com/16/03/34/21/16033421_30153621_1000.jpg",
-      img2: "https://cdn-images.farfetch-contents.com/16/03/34/21/16033421_30152485_1000.jpg",
-      brand: "Tory Burch",
-      category: "multi-logo band ring",
-      desc: "Add a little extra something to your #ootd. Made from gold-tone metal, this multi-logo band ring from Tory Burch will be the 'cherry on top' of whatever you decide to pick out. Never fails.",
-      price: "247",
-      type: "jewelry",
-    },
-    {
-      id: 314,
-      img1: "https://cdn-images.farfetch-contents.com/17/52/95/28/17529528_36575048_1000.jpg",
-      img2: "https://cdn-images.farfetch-contents.com/17/52/95/28/17529528_36574342_1000.jpg",
-      brand: "Valentino Garavani",
-      category: "metallic leather bracelet",
-      desc: "Crafted from leather, Valentino Garavani's bracelet is defined by a metallic silver finish. The silver-tone hardware accentuates it all the more.",
-      price: "308",
-      type: "jewelry",
-    },
-    {
-      id: 315,
-      img1: "https://cdn-images.farfetch-contents.com/17/26/20/94/17262094_35323002_1000.jpg",
-      img2: "https://cdn-images.farfetch-contents.com/17/26/20/94/17262094_35322138_1000.jpg",
-      brand: "Tory Burch",
-      category: "Kira enamel slider bracelet",
-      desc: "This gold-tone piece really puts time in timeless. With all-over double T emblem, this Tory Burch bracelet was made for you to wear every day.",
-      price: "205",
-      type: "jewelry",
-    },
-    {
-      id: 186,
-      img1: "https://cdn-images.farfetch-contents.com/14/61/24/16/14612416_22492671_1000.jpg",
-      img2: "https://cdn-images.farfetch-contents.com/14/61/24/16/14612416_22492672_1000.jpg",
-      brand: "FPM Milano",
-      category: "stud detail luggage bag",
-      desc: "Grey aluminium stud detail luggage bag from FPM Milano featuring an all around zip fastening, a top handle and rolling wheels at base.",
-      price: "2915",
-      type: "accessories",
-    },
-    {
-      id: 321,
-      img1: "https://cdn-images.farfetch-contents.com/17/29/23/17/17292317_39813844_1000.jpg",
-      img2: "https://cdn-images.farfetch-contents.com/17/29/23/17/17292317_39813845_1000.jpg",
-      brand: "Kenneth Jay Lane",
-      category: "pearl three bracelet pack",
-      desc: "Kenneth Jay Lane's penchant for delivering striking jewellery is displayed on this bracelet pack. Adorned with lustrous glass pearls, this pack is composed of three bracelets and boasts an adjustable fit.",
-      price: "495",
-      type: "jewelry",
-    },
+    color: "pink" },
+  {
+    id: 196,
+    img1: "https://cdn-images.farfetch-contents.com/17/53/01/28/17530128_37789989_1000.jpg",
+    img2: "https://cdn-images.farfetch-contents.com/17/53/01/28/17530128_37789992_1000.jpg",
+    brand: "Valentino Garavani",
+    category: "Vlogo plaque bag set",
+    desc: "This make-up bag designed by Valentino Garavani is made from high-quality pebbled black leather in a structured box shape. Finished with gold-tone hardware, this accessory boasts the iconic VLogo plaque adorning the front.",
+    price: "4250",
+    type: "accessorie",
+    color:"white"
+  },
+  {
+    id: 145,
+    img1: "https://cdn-images.farfetch-contents.com/17/77/48/62/17774862_39584451_1000.jpg",
+    img2: "https://cdn-images.farfetch-contents.com/17/77/48/62/17774862_39584448_1000.jpg",
+    brand: "MACH & MACH",
+    category: "double-bow crystal-embellished mules",
+    desc: "Put your best foot forward in these Super-Star low-top sneakers from Golden Goose. Designed with the label's iconic distressing, they'll slot into your existing wardrobe with ease. Don't say we didn't warn you.",
+    price: "2007",
+    type: "shoes",
   
-    {
-      id: 187,
-      img1: "https://cdn-images.farfetch-contents.com/14/44/99/77/14449977_21159659_1000.jpg",
-      img2: "https://cdn-images.farfetch-contents.com/14/44/99/77/14449977_21159661_1000.jpg",
-      brand: "Burberry",
-      category: "fringed cape",
-      desc: "During his first two seasons at the creative helm, Burberry's Riccardo Tisco has paid homage to the British brand's house codes whilst adding some tweaks along the way. This scarf-inspired cape from AW19 has been spun in Italy from a wool and cashmere-blend and is punctuated with bold stripes, wispy fringing and the label's logo.",
-      price: "2693",
-      type: "accessories",
-    },
+    color:"blue"  },
+  
+  {
+    id: 188,
+    img1: "https://cdn-images.farfetch-contents.com/14/08/75/46/14087546_22670609_1000.jpg",
+    img2: "https://cdn-images.farfetch-contents.com/14/08/75/46/14087546_22670616_1000.jpg",
+    brand: "Dolce & Gabbana",
+    category: "jewel belt",
+    desc: "Looking for that finishing glamorous touch to your outfit? Dolce & Gabbana are here to help you secure your look together with this grey jewel belt that has been crafted from and Italian cotton blend and has a charming bow detail on the front. Featuring a stretch fit and metallic threading.",
+    price: "2513",
+    type: "accessorie",
+    color:"black"
+  },
+  
+  {
+    id: 146,
+    img1: "https://cdn-images.farfetch-contents.com/15/52/16/90/15521690_27736891_1000.jpg",
+    img2: "https://cdn-images.farfetch-contents.com/15/52/16/90/15521690_27736892_1000.jpg",
+    brand: "MACH & MACH",
+    category: "double-bow crystal-embellished mules",
+    desc: "Put your best foot forward in these Super-Star low-top sneakers from Golden Goose. Designed with the label's iconic distressing, they'll slot into your existing wardrobe with ease. Don't say we didn't warn you.",
+    price: "2099",
+    type: "shoes",
+  
+    color:"white"  },
+  {
+    id: 181,
+    img1: "https://cdn-images.farfetch-contents.com/14/56/20/53/14562053_22355242_1000.jpg",
+    img2: "https://cdn-images.farfetch-contents.com/14/56/20/53/14562053_22355244_1000.jpg",
+    brand: "Gucci",
+    category: "black fur scarf",
+    desc: "It’s quirky, but so glamorous. This fox fur scarf from Gucci will have everyone asking about your style. This piece was made for you. Featuring a natural finish and a regular length.",
+    price: "3913",
+    type: "accessorie",
+    color:"black"
+  },
+  {
+    id: 131,
+    img1: "https://cdn-images.farfetch-contents.com/18/13/36/96/18133696_39868697_1000.jpg",
+    img2: "https://cdn-images.farfetch-contents.com/18/13/36/96/18133696_39868696_1000.jpg",
+    brand: "Versace",
+    category: "Medusa 100 platform sandals",
+    desc: "These pumps from Alexander McQueen are crafted from soft black leather and feature sparkling silver-tone hardware. The pair are placed atop a 105mm stiletto heel for added drama. ",
+    price: "1300",
+    type: "shoes",
+  
+    color: "blue" },
+  {
+    id: 155,
+    img1: "https://cdn-images.farfetch-contents.com/17/68/06/43/17680643_38679475_1000.jpg",
+    img2: "https://cdn-images.farfetch-contents.com/17/68/06/43/17680643_38676839_1000.jpg",
+    brand: "Versace",
+    category: "La Medusa small tote bag",
+    desc: "A fresh silhouette from Bottega Veneta's SS22 collection, this Toyin shoulder bag is crafted from brushed calf leather in an acid-green hue.",
+    price: "2000",
+    type: "bags",
+  
+     },
+  {
+    id: 324,
+    img1: "https://cdn-images.farfetch-contents.com/17/59/89/14/17598914_37415168_1000.jpg",
+    img2: "https://cdn-images.farfetch-contents.com/17/59/89/14/17598914_37415169_1000.jpg",
+    brand: "Tory Burch",
+    category: "Roxanne Double T ring",
+    desc: "The Roxanne line-up from Tory Burch offers a timeless aesthetic. This ring is presented in gold-tone brass with a sparkling crystal embellishment.",
+    price: "208",
+    type: "jewelry",
+  
+    color:  "blue"  },
+  {
+    id: 148,
+    img1: "https://cdn-images.farfetch-contents.com/14/54/01/99/14540199_24231303_1000.jpg",
+    img2: "https://cdn-images.farfetch-contents.com/14/54/01/99/14540199_24231313_1000.jpg",
+    brand: "Bottega Veneta",
+    category: "BV Lido 120mm Intrecciato sandals",
+    desc: "If there's one thing these black sandals teach us, it is that what they say is totally true: less is more. And Dolce & Gabbana is not afraid to shoe(w) it. Featuring a branded insole, an open toe, an ankle strap with a side buckle fastening and a high embellished heel.",
+    price: "1900",
+    type: "shoes",
+  
+    color: "black" },
+  {
+    id: 168,
+    img1: "https://cdn-images.farfetch-contents.com/15/29/41/62/15294162_27743172_1000.jpg",
+    img2: "https://cdn-images.farfetch-contents.com/15/29/41/62/15294162_27743174_1000.jpg",
+    brand: "Bottega Veneta",
+    category: "BV Jodie shoulder bag",
+    desc: "Have visions of glorious fashion weaving into your dreams each night? Bottega Veneta turns fantasy into a reality with this BV Jodie Intrecciato small shoulder bag that is ready to slip into your hand and have you feeling on cloud nine.",
+    price: "7828",
+    type: "bags",
+  
+    color: "black"},
+  {
+    id: 103,
+    img1: "https://cdn-images.farfetch-contents.com/17/59/06/83/17590683_37698878_1000.jpg",
+    img2: "https://cdn-images.farfetch-contents.com/17/59/06/83/17590683_37698899_1000.jpg",
+    brand: "Off-White",
+    category: "logo-print cropped cotton T-shirt",
+    desc: "Off-White s SS22 collection comprises soft nude hues and understated branded details. Presented in a muted tonal colourway, this cropped T-shirt is printed with the label's logo on the front'",
+    price: "512",
+    type: "clothing",
+    color:"pink"
+  },
+  {
+    id: 182,
+    img1: "https://cdn-images.farfetch-contents.com/14/62/86/58/14628658_22878683_1000.jpg",
+    img2: "https://cdn-images.farfetch-contents.com/14/62/86/58/14628658_22878684_1000.jpg",
+    brand: "Brunello Cucinelli",
+    category: "snake-effect belt",
+    desc: "Pink leather snake-effect belt from Brunello Cucinelli featuring a front buckle fastening, an adjustable fit and silver-tone hardware.",
+    price: "4060",
+    type: "accessorie",
+    color:"white"
+  },
+  
+  {
+    id: 184,
+    img1: "https://cdn-images.farfetch-contents.com/17/81/79/03/17817903_38152214_1000.jpg",
+    img2: "https://cdn-images.farfetch-contents.com/17/81/79/03/17817903_38153459_1000.jpg",
+    brand: "Saint Laurent",
+    category: "Becky quilted wallet on chain",
+    desc: "In typical Saint Laurent style, the Becky shoulder bag showcases an enduring leather-made silhouette bound to stand the test of time. A quilted-effect design is accented with a gold-hued YSL front plaque that adds to the timeless feel.",
+    price: "3206",
+    type: "accessorie",
+    color:"black"
+  },
+  {
+    id: 313,
+    img1: "https://cdn-images.farfetch-contents.com/16/03/34/21/16033421_30153621_1000.jpg",
+    img2: "https://cdn-images.farfetch-contents.com/16/03/34/21/16033421_30152485_1000.jpg",
+    brand: "Tory Burch",
+    category: "multi-logo band ring",
+    desc: "Add a little extra something to your #ootd. Made from gold-tone metal, this multi-logo band ring from Tory Burch will be the 'cherry on top' of whatever you decide to pick out. Never fails.",
+    price: "247",
+    type: "jewelry",
+  
+  },
+  {
+    id: 314,
+    img1: "https://cdn-images.farfetch-contents.com/17/52/95/28/17529528_36575048_1000.jpg",
+    img2: "https://cdn-images.farfetch-contents.com/17/52/95/28/17529528_36574342_1000.jpg",
+    brand: "Valentino Garavani",
+    category: "metallic leather bracelet",
+    desc: "Crafted from leather, Valentino Garavani's bracelet is defined by a metallic silver finish. The silver-tone hardware accentuates it all the more.",
+    price: "308",
+    type: "jewelry",
+  
+  },
+  {
+    id: 315,
+    img1: "https://cdn-images.farfetch-contents.com/17/26/20/94/17262094_35323002_1000.jpg",
+    img2: "https://cdn-images.farfetch-contents.com/17/26/20/94/17262094_35322138_1000.jpg",
+    brand: "Tory Burch",
+    category: "Kira enamel slider bracelet",
+    desc: "This gold-tone piece really puts time in timeless. With all-over double T emblem, this Tory Burch bracelet was made for you to wear every day.",
+    price: "205",
+    type: "jewelry",
+  },
+  {
+    id: 186,
+    img1: "https://cdn-images.farfetch-contents.com/14/61/24/16/14612416_22492671_1000.jpg",
+    img2: "https://cdn-images.farfetch-contents.com/14/61/24/16/14612416_22492672_1000.jpg",
+    brand: "FPM Milano",
+    category: "stud detail luggage bag",
+    desc: "Grey aluminium stud detail luggage bag from FPM Milano featuring an all around zip fastening, a top handle and rolling wheels at base.",
+    price: "2915",
+    type: "accessorie",
+    color:"black"
+  },
+  {
+    id: 321,
+    img1: "https://cdn-images.farfetch-contents.com/17/29/23/17/17292317_39813844_1000.jpg",
+    img2: "https://cdn-images.farfetch-contents.com/17/29/23/17/17292317_39813845_1000.jpg",
+    brand: "Kenneth Jay Lane",
+    category: "pearl three bracelet pack",
+    desc: "Kenneth Jay Lane's penchant for delivering striking jewellery is displayed on this bracelet pack. Adorned with lustrous glass pearls, this pack is composed of three bracelets and boasts an adjustable fit.",
+    price: "495",
+    type: "jewelry",
+   },
+  
+  {
+    id: 187,
+    img1: "https://cdn-images.farfetch-contents.com/14/44/99/77/14449977_21159659_1000.jpg",
+    img2: "https://cdn-images.farfetch-contents.com/14/44/99/77/14449977_21159661_1000.jpg",
+    brand: "Burberry",
+    category: "fringed cape",
+    desc: "During his first two seasons at the creative helm, Burberry's Riccardo Tisco has paid homage to the British brand's house codes whilst adding some tweaks along the way. This scarf-inspired cape from AW19 has been spun in Italy from a wool and cashmere-blend and is punctuated with bold stripes, wispy fringing and the label's logo.",
+    price: "2693",
+    type: "accessorie",
+    color:"white"
+  },
     {
       id: 322,
       img1: "https://cdn-images.farfetch-contents.com/16/72/91/29/16729129_34071688_1000.jpg",
@@ -1209,17 +1230,6 @@ let womens_Product = [
   
       type: "clothing",
     },
-  
-    {
-      id: 177,
-      img1: "https://cdn-images.farfetch-contents.com/16/87/08/66/16870866_33813832_1000.jpg",
-      img2: "https://cdn-images.farfetch-contents.com/16/87/08/66/16870866_33814228_1000.jpg",
-      brand: "Thom Browne",
-      category: "pointelle knit beanie",
-      desc: "Thom Browne's knit beanies are back for the SS22 collection. As per usual, the New York City-based brand has put together a timeless white colour with the classic stripe detailing and a pointelle knit construction. ",
-      price: "16500",
-      type: "accessories",
-    },
     {
       id: 170,
       img1: "https://cdn-images.farfetch-contents.com/14/60/03/44/14600344_22475455_1000.jpg",
@@ -1495,9 +1505,14 @@ let womens_Product = [
     let img1 = document.createElement("img")
     let img2 = document.createElement("img")
     let brand = document.createElement("h3")
-    let category = document.createElement("h3")
+    let category = document.createElement("p")
+    category.style.fontSize = "16px"
+    category.style.fontStyle = "italic"
+    category.style.fontFamily = "Arial, Helvetica, sans-serif"
+  
     let desc = document.createElement("p")
-    let price = document.createElement("h3")
+    let price = document.createElement("p")
+    price.setAttribute("id","price")
     let type = document.createElement("p")
   
     img1.src = ele.img1
@@ -1505,12 +1520,154 @@ let womens_Product = [
     brand.textContent = ele.brand
     category.textContent = ele.category
     desc.textContent = ele.desc
-    price.textContent = ele.price
-    type.textContent = ele.type
+    price.textContent = `$${ele.price}`
+    type.textContent = `Type : ${ele.type}`
     
     let box = document.createElement("div")
-    box.append(img1,img2,brand,category,desc,price,type)
+    box.append(img1,brand,category,price)
+    box.addEventListener("click",function(){
+      addToDetailPage(ele)
+    })
   
     document.querySelector("#proBox").append(box)
   })
   }
+  function addToDetailPage(ele){
+    localStorage.setItem("proDetails",JSON.stringify(ele))
+    window.location.href = "wproDetail.html"
+  }
+
+
+        // Brand Filter
+  document.getElementById("id11").addEventListener("click",Versa)
+
+  function Versa(){
+
+    let a = womens_Product.filter(function(ele){
+      return ele.brand=="Versace";
+    })
+
+    displayData(a)
+  }
+  document.getElementById("id12").addEventListener("click",Versa2)
+
+  function Versa2(){
+
+    let a = womens_Product.filter(function(ele){
+      return ele.brand=="KNWLS";
+    })
+
+    displayData(a)
+  }
+  document.getElementById("id13").addEventListener("click",Versa3)
+
+  function Versa3(){
+
+    let a = womens_Product.filter(function(ele){
+      return ele.brand=="Gucci";
+    })
+
+    displayData(a)
+  }
+  document.getElementById("id14").addEventListener("click",Versa4)
+
+  function Versa4(){
+
+    let a = womens_Product.filter(function(ele){
+      return ele.brand=="Balenciaga";
+    })
+
+    displayData(a)
+  }
+
+
+
+
+
+  
+        // color Filter
+        document.getElementById("id15").addEventListener("click",Versa5)
+
+        function Versa5(){
+      
+          let a = womens_Product.filter(function(ele){
+            return ele.color=="black";
+          })
+      
+          displayData(a)
+        }
+        document.getElementById("id16").addEventListener("click",Versa6)
+      
+        function Versa6(){
+      
+          let a = womens_Product.filter(function(ele){
+            return ele.color=="white";
+          })
+      
+          displayData(a)
+        }
+        document.getElementById("id17").addEventListener("click",Versa7)
+      
+        function Versa7(){
+      
+          let a = womens_Product.filter(function(ele){
+            return ele.color=="pink";
+          })
+      
+          displayData(a)
+        }
+        document.getElementById("id19").addEventListener("click",Versa8)
+      
+        function Versa8(){
+      
+          let a = womens_Product.filter(function(ele){
+            return ele.color=="blue";
+          })
+      
+          displayData(a)
+        }
+      
+      // Sort filter
+
+
+      document.getElementById("lth").addEventListener("click",lowtohigh)
+
+      function lowtohigh(){
+        event.preventDefault();
+
+        let sort_items = womens_Product.sort(function(a,b){
+          let x=+a.price;
+          let y=+b.price;
+
+          if(x>y){
+            return 1;
+          }
+          if(x<y){
+            return -1;
+          }
+          return 0;
+        })
+
+        displayData(sort_items)
+      }
+
+      document.getElementById("htl").addEventListener("click",hightolow)
+
+      function hightolow(){
+        event.preventDefault();
+
+        let sort_items = womens_Product.sort(function(a,b){
+          let x=+a.price;
+          let y=+b.price;
+
+          if(x>y){
+            return -1;
+          }
+          if(x<y){
+            return 1;
+          }
+          return 0;
+        })
+
+        displayData(sort_items)
+      }
