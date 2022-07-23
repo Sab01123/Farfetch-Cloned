@@ -1,41 +1,116 @@
-#details{
-    display: flex;
+#details {
+  display: flex;
+  justify-content: space-between;
+}
+#image {
+  width: 64%;
+  display: flex;
+}
+#details > div > img {
+  width: 50%;
+}
+#information {
+  width: 33%;
+  margin-top: 90px;
+  padding: 0px 20px;
+}
+#price {
+  font-weight: 400;
+  font-size: 19px;
+  color: rgb(34, 34, 34);
+  font-family: Arial, Helvetica, sans-serif;
+}
+#price_span {
+  font-size: 14px;
+  margin-left: 5px;
+}
+#addbutton {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+#addbutton > button:nth-child(1) {
+  background-color: black;
+  color: white;
+  height: 50px;
+  font-size: 17px;
+  font-weight: bold;
+  width: 60%;
+  border-radius: 5px;
+}
 
+#addbutton > button:nth-child(2) {
+  width: 33%;
+  border-radius: 5px;
+  height: 50px;
+  font-size: 17px;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
 }
-#image{
-    width: 65%;
-    border: 4px solid black;
-    display: flex;
+
+.headi {
+  font-size: 19px;
+  margin-bottom: -12px;
+  font-weight: 700;
 }
-#details>div>img{
-    width: 50%;
+#heading:hover {
+  text-decoration: underline;
 }
-#information{
-    width: 35%;
-}
-#addbutton{
-    display: flex;
+/* recomendation */
+.wrapper{
     width: 90%;
+    height: 360px;
     margin: auto;
+    display: flex;
+    gap: 20px;
+}
 
+figure{
+    width: 32%;
+    float: left;
+    margin: 0;
+}
+figcaption{
+    text-align: center;
+}
+.hover-animation{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 10% auto;
+    
+ 
+    /* box-shadow: 5px 5px 15px rgba(0,0,0,0.6); */
+}
+.hover-animation img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+.hover-animation img.img-front:hover{
+    opacity: 0;
+    cursor: pointer;
+}
+/* recomendation ended */
+#static_detail{
+    width: 23%;
+    display: flex;
     justify-content: space-between;
-    border:  1px solid grey;
-}
-#addbutton>button:nth-child(1){
-    background-color: black;
-    color: white;
-    height: 50px;
-    font-weight: bold;
-width: 64%;
-}
+font-family: Arial, Helvetica, sans-serif;
+margin-top: 20px;
 
-#addbutton>button:nth-child(2){
-    width: 33%;
-    height: 50px;
-    font-size: 17px;
-    border: 1px solid black;
-    background-color: white;
-
-    color: black;
 }
-
+#prodesc{
+display: flex;
+justify-content: space-between;
+}
+#prodesc>div{
+    padding: 0px 10px 0px 20px;
+    width: 31%;
+}
+#imgDesc>img{
+    width: 100%;
+}
