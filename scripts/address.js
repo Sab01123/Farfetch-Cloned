@@ -1,4 +1,4 @@
-let data2 = JSON.parse(localStorage.getItem("total"));
+// let data2 = JSON.parse(localStorage.getItem("total"));
 
 document.querySelector("button").addEventListener("click", myfun)
 
@@ -35,56 +35,60 @@ function myfun(event) {
 
 }
 
+/**********summary data*************/ 
 
-// let btn = document.getElementById("savebtn").addEventListener("click",function(){
-//     let first = document.getElementById("first").value
-//     let last = document.getElementById("last").value
-
-//     let state= document.getElementById("state").value
-//     let city = document.getElementById("city").value
-//     let phone = document.getElementById("phone").value
-    
-//   })
-  
-  let data = JSON.parse(localStorage.getItem("cartData"));
+let data = JSON.parse(localStorage.getItem("itemData")) || []
+  let data2 = JSON.parse(localStorage.getItem("total"));
  
 
+// console.log(data);
+// console.log(data2);
+// localStorage.setItem("itemData",JSON.stringify(data))
+
+
 console.log(data);
-localStorage.setItem("cartData",JSON.stringify(data))
+mydata(data);
+mydata1(data2);
 
-console.log(data2);
- let dlvry = document.getElementById("delivery1");
- delivery1.innerText = data2[1]
- let price = document.getElementById("price")
-   price.innerText = data2[0]
-    let delivery = document.getElementById("delivery");
-function append() {
-  let product = document.getElementById("product");
-  data.forEach(function (el) {
-    let smalldiv = document.createElement("div");
-    smalldiv.setAttribute("id", "smalldiv");
-    let imagediv = document.createElement("div");
-    imagediv.setAttribute("id", "imagediv");
-    let pricediv = document.createElement("div");
-    pricediv.setAttribute("id", "pricediv");
-   
-    
-    let image = document.createElement("img");
-    image.setAttribute("id", "avtar");
-    image.src = el.img1;
+// console.log(data2);
+function mydata(data){
 
-    let h3 = document.createElement("h4");
-    h3.setAttribute("id","head");
+  // let delivery1 = document.getElementById("delivery1")
+  data.forEach(function(ele){
+    let product = document.getElementById("product")
+  
 
-    h3.innerText = el.brand;
-    let price = document.createElement("p");
-    price.innerText = el.price;
+  let imgdiv = document.createElement("div")
+  imgdiv.setAttribute("class","mainbox")
 
-    imagediv.append(image);
-    pricediv.append(h3, price);
-    smalldiv.append(imagediv, pricediv);
-    product.append(smalldiv);
-  });
+  let detaildiv = document.createElement("div")
+  detaildiv.setAttribute("class","detail")
+  
+  let detaildiv2 = document.createElement("div")
+  detaildiv2.setAttribute("class","detail2")
+
+  let image = document.createElement("img")
+  image.src = ele.img1
+  image.setAttribute("class","imagee")
+
+  let name = document.createElement("p")
+  name.innerText = ele.category
+
+  let price = document.createElement("p")
+  price.innerText = `USD $ ${ele.price}`
+  price.setAttribute("class","price1")
+  imgdiv.append(image)
+  detaildiv.append(name,price)
+  detaildiv2.append(imgdiv,detaildiv)
+  product.append(detaildiv2)
+
+
+  })
 }
-
-append();
+  
+function mydata1(data2){
+  let pricediv = document.getElementById("price")
+  let totalprice = document.createElement("p")
+  totalprice.innerText = `USD $ ${data2}`
+  pricediv.append(totalprice)
+}
