@@ -48,14 +48,16 @@ figcaption{
 }
 #main{
     /* border: 1px solid; */
-    height: 100%;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
 }
 .items{
     /* border: 1px solid; */
+    height: auto;
     width: 70%;
     overflow: scroll;
+    
 }
 .items::-webkit-scrollbar{
 display: none;
@@ -130,4 +132,7 @@ table {
 .btn{
     cursor: pointer;
 }
+/* tr{
+    height: auto;
+} */
 

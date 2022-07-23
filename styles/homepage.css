@@ -4,6 +4,14 @@
     font-family: var(--fontNormal);
   }
 
+  /* #navbar{
+    position: sticky;
+    top: 1;
+}
+#sticky{
+    background-color: whitesmoke;
+} */
+
   #allDepartments>h2{
     text-align: center;
     font-family:Arial, Helvetica, sans-serif;
@@ -205,3 +213,11 @@
       margin: 0 2% 2%;
     }
   }
+  .fh>a>h2{
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+a:hover{
+  text-decoration: none;
+
+}

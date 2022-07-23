@@ -4,6 +4,7 @@
     padding: 0;
    
 }
+
 .fh>a{
     text-decoration: none;
 }
@@ -13,6 +14,7 @@
 #navbar{
     width: 100%;
     margin: auto;
+    position: sticky;
 }
 #nav1{
     height: 0.3%;
@@ -170,4 +172,13 @@
         .modal-body > div > div
         {
             padding-top: 15px;
+        }
+        
+        #navbar{
+            position: sticky;
+            top: 0;
+            /* position: fixed; */
+        }
+        #sticky{
+            background-color:white;
         }
