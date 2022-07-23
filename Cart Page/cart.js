@@ -1,6 +1,9 @@
+import footer from "../Footer/fw17_0093foot.js";
+
 let data = JSON.parse(localStorage.getItem("itemsData"));
 
 let allRowTotal = 0;
+let sum = 0;
 showData(data);
 var price = 0;
 var total = 0;
@@ -150,3 +153,5 @@ function deleteData(elem, index) {
   showData(data);
   window.location.reload();
 }
+
+document.querySelector("#footer").innerHTML = footer();
