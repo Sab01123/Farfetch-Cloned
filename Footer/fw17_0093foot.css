@@ -7,13 +7,21 @@
     justify-content: space-evenly;
     text-align: center;
     padding: 2% 2% 2% 2%;
+    margin-top: 10%;
 }
+ #footer{
+    width: 95%;
+    /* border: 1px solid; */
+     height: 600px;
+    margin: auto;
+} 
 #fup1{
    
     width: 30%;
     height: 50%; 
     text-align: center;
     margin-top: 1.5%;
+    
    
 }
 #fup2{
@@ -35,6 +43,7 @@
     width: 55%;
     text-align: center;
     margin-left: 25%;
+    margin-top: -30%;
 
 
 }

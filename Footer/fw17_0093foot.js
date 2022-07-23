@@ -1,4 +1,4 @@
-let navbar = ()=>{
+let footer = ()=>{
     return`
     <div id="fup">
     <div id="fup1"><br><i class="fa-regular fa-clothes-hanger"></i><b>HOW TO STOP</b> <BR> Your guide to shopping and placing orders <br></div>
@@ -73,7 +73,7 @@ let navbar = ()=>{
    </div>
    <P>'FARFETCH' and the 'FARFETCH' logo are trade marks of FARFETCH UK Limited and are registered in numerous jurisdictions around the world.
      © Copyright 2022 FARFETCH UK Limited. All rights reserved.</P>
-   </div>
+  
     `;
 }
-export {navbar};
+export default footer;

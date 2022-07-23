@@ -4,6 +4,16 @@
     padding: 0;
    
 }
+.fh>a{
+    text-decoration: none;
+}
+.fh>a>h2{
+    color: black;
+}
+#navbar{
+    width: 100%;
+    margin: auto;
+}
 #nav1{
     height: 0.3%;
     background-color: #ff2d44;
@@ -11,6 +21,7 @@
     justify-content: center;
     color:white;
     align-items: center;
+    /* margin-top: 5%; */
 }
 #nav2 .items{
     text-decoration: none;
@@ -40,6 +51,10 @@
   
 }
 #nav2 .items a{
+    text-decoration: none;
+    text-decoration-color: black;
+}
+#nav3 .items a{
     text-decoration: none;
     text-decoration-color: black;
 }
@@ -94,13 +109,11 @@
 }
 
 #nav3 .logom{
-    margin-left: 240%;
+    margin-left: 210%;
     text-align: left;
-    padding-right: -40%;
     
-    
-
 }
+
 
 .nav-container 
         {
@@ -130,6 +143,10 @@
             z-index: 10;
             background-color: white;
         }
+        /* .items>a{
+            text-decoration: none;
+        } */
+        
 
         .nav-screen-parentContainer 
         {
