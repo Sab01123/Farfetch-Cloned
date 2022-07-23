@@ -1495,43 +1495,83 @@ let womens_Product = [
   
   ];
 
+  // womens_Product.forEach(function(elem,index){
+  //   let div = document.createElement("div")
 
+  //   let h3 = document.createElement("h3")
+  //   h3.innerText=elem.brand;
+  //   h3.setAttribute("id","h3")
+
+  //   let category = document.createElement("h3")
+  //   category.innerText=elem.category;
+  //   category.setAttribute("id","h4")
+
+  //   let price = document.createElement("h3")
+  //   price.innerText=elem.price;
+  //   price.setAttribute("id","h5")
+
+  //   let img1 = document.createElement("img")
+  //   img1.setAttribute("class", "img-back")
+  //   img1.src = elem.img2;
+  //   img1.style.width="100%"
+
+  //   let img2 = document.createElement("img")
+  //   img2.setAttribute("class", "img-front")
+  //   img2.src = elem.img1;
+  //   img2.style.width="100%"
+
+  //   div.append(img1,img2,  h3,category,price)
+  //   document.querySelector(".hover-animation").append(div)
 
   displayData(womens_Product)
 
   function displayData(data){
-  document.querySelector("#proBox").innerHTML = ""
-  data.map(function(ele){
-    let img1 = document.createElement("img")
-    let img2 = document.createElement("img")
-    let brand = document.createElement("h3")
-    let category = document.createElement("p")
-    category.style.fontSize = "16px"
-    category.style.fontStyle = "italic"
-    category.style.fontFamily = "Arial, Helvetica, sans-serif"
+    document.querySelector(".hover-animation").innerHTML = ""
+    data.map(function(ele){
+      let img1 = document.createElement("img")
+      img1.setAttribute("class", "img-back")
+      img1.src = ele.img2;
+      img1.style.width="100%"
   
-    let desc = document.createElement("p")
-    let price = document.createElement("p")
-    price.setAttribute("id","price")
-    let type = document.createElement("p")
+      let img2 = document.createElement("img")
+      img2.setAttribute("class", "img-front")
+      img2.src = ele.img1;
+      img2.style.width="100%"
   
-    img1.src = ele.img1
-    img2.src = ele.img2
-    brand.textContent = ele.brand
-    category.textContent = ele.category
-    desc.textContent = ele.desc
-    price.textContent = `$${ele.price}`
-    type.textContent = `Type : ${ele.type}`
+      let brand = document.createElement("h4")
+      brand.setAttribute("id","h3")
+  
+      let category = document.createElement("p")
+      // category.setAttribute("id","h3")
+      category.style.fontSize = "16px"
+      category.style.fontStyle = "italic"
+      category.style.fontFamily = "Arial, Helvetica, sans-serif"
     
-    let box = document.createElement("div")
-    box.append(img1,brand,category,price)
-    box.addEventListener("click",function(){
-      addToDetailPage(ele)
+      let desc = document.createElement("p")
+      let price = document.createElement("p")
+      price.setAttribute("id","price")
+      let type = document.createElement("p")
+    
+      // img1.src = ele.img1
+      // img2.src = ele.img2
+      brand.textContent = ele.brand
+      category.textContent = ele.category
+      desc.textContent = ele.desc
+      price.textContent = `$${ele.price}`
+      type.textContent = `Type : ${ele.type}`
+      
+      let box = document.createElement("div")
+      box.setAttribute("id","lilbox")
+      box.append(brand,category,price)
+      let box2 = document.createElement("div")
+      box2.append(img1,img2,box)
+      box2.addEventListener("click",function(){
+        addToDetailPage(ele)
+      })
+    
+      document.querySelector(".hover-animation").append(box2)
     })
-  
-    document.querySelector("#proBox").append(box)
-  })
-  }
+    }
   function addToDetailPage(ele){
     localStorage.setItem("proDetails",JSON.stringify(ele))
     window.location.href = "wproDetail.html"

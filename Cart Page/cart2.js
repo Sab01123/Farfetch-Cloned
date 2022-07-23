@@ -61,4 +61,4 @@ let arr = [
   },
 ];
 
-localStorage.setItem("itemsData", JSON.stringify(arr));
+// localStorage.setItem("itemsData", JSON.stringify(arr));

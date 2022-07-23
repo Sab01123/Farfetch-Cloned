@@ -28,6 +28,8 @@
   display: flex;
   margin: auto;
   justify-content: space-between;
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 #addbutton > button:nth-child(1) {
   background-color: black;
@@ -53,10 +55,11 @@
   font-size: 19px;
   margin-bottom: -12px;
   font-weight: 700;
+ margin-bottom: 1px;
 }
-#heading:hover {
+/* #heading:hover {
   text-decoration: underline;
-}
+} */
 /* recomendation */
 .wrapper{
     width: 90%;
