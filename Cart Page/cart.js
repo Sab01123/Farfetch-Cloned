@@ -1,5 +1,3 @@
-import footer from "../Footer/fw17_0093foot.js";
-
 let data = JSON.parse(localStorage.getItem("itemsData"));
 
 let allRowTotal = 0;
@@ -128,6 +126,9 @@ let delivery = document.querySelector("#delivery");
 
 // allRowTotal
 console.log(allRowTotal);
+// sending total data
+localStorage.setItem("total", JSON.stringify(allRowTotal + 600));
+
 displayTotalPrice(allRowTotal);
 function displayTotalPrice(value) {
   totalprice.innerText = value;
@@ -153,5 +154,3 @@ function deleteData(elem, index) {
   showData(data);
   window.location.reload();
 }
-
-document.querySelector("#footer").innerHTML = footer();

@@ -314,8 +314,12 @@
 
 </html>
 <script src="cart.js" type="module"></script>
-<script src="cart2.js"></script>
+<!-- <script src="cart2.js"></script> -->
 <script src="../Footer/fw17_0093foot.js"></script>
+
+
+
+<!--Signup and login js-->
 
 <script>
     let tab = document.querySelector(".tab-form");
@@ -357,6 +361,7 @@
             pass: pass,
         };
         localStorage.setItem("userData", JSON.stringify(obj));
+        alert("Signup Successful!")
     });
 
     /*----Login functionality-----*/
@@ -366,7 +371,8 @@
         let obj = JSON.parse(localStorage.getItem("userData"));
         let email = document.querySelector("#loginemail").value;
         let pass = document.querySelector("#loginpass").value;
-        if (email != obj.email) alert("User does not Exist⛔");
+        if (obj == null) alert("User does not Exist⛔")
+        else if (email != obj.email) alert("User does not Exist⛔");
         else if (pass != obj.pass) alert("Wrong Credentials❌");
         else {
             alert("Login Successful😀");
@@ -387,4 +393,10 @@
         document.querySelector(".modal").style.display = "none"
     });
 
+</script>
+
+
+<script type="module">
+    import footer from "/mucho-angle-7709/Footer/fw17_0093foot.js"
+    document.querySelector("#footer").innerHTML = footer()
 </script>
