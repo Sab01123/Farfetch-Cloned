@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart section</title>
     <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="../Footer/fw17_0093foot.css">
     <style>
         * {
-            /* margin: 0;
-            padding: 0; */
             box-sizing: border-box;
+        }
+
+        #navbar img {
+            width: 100%;
+            margin: 0;
+            ;
         }
 
         .modal {
@@ -131,6 +136,11 @@
 </head>
 
 <body>
+    <!--Navbar-->
+    <div id="navbar">
+        <img src="image.png" alt="">
+    </div>
+
     <!-- signup and login pop up -->
     <div class="modal">
         <div class="tab-form">
@@ -297,12 +307,15 @@
 
     </div>
 
+    <!--footer-->
+    <div id="footer"></div>
 
 </body>
 
 </html>
-<script src="cart.js"></script>
+<script src="cart.js" type="module"></script>
 <script src="cart2.js"></script>
+<script src="../Footer/fw17_0093foot.js"></script>
 
 <script>
     let tab = document.querySelector(".tab-form");
