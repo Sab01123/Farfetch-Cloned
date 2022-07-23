@@ -68,10 +68,11 @@ function displayData(data) {
 
 // Add to cart funtion here--------------------------
 
-function goToCart(ele){
-    console.log("bnm,")
-localStorage.setItem("itemData",JSON.stringify(ele))
-window.location.href="./Cart Page/cart.html"
+function goToCart(data) {
+    let arr =JSON.parse(localStorage.getItem("itemData"))|| [];
+    arr.push(data);
+    localStorage.setItem("itemData", JSON.stringify(arr));
+    window.location.href = "./Cart Page/cart.html";
 }
 function displayDiscription(data){
 
