@@ -1,11 +1,12 @@
 let navbar = ()=>{
     return`
-    
+    <div id="sticky">
         <div id="nav1">
           <div>
           <h5 >Sale | 10,000 items at 60% off | <span style="text-decoration:underline;">Shop now</span></h5>
           </div>
         </div>
+     
         <div id="nav2">
           <div class="items">
             <a href="/mucho-angle-7709/Women's Page/womenHome/womensPage.html" style="color:
@@ -19,13 +20,13 @@ let navbar = ()=>{
             <a href="/mucho-angle-7709/kidsHomePage.html" style="color:
             #595853">Kids</a>
           </div>
-          <div class="fh">
 
+          <div class="fh">
           <a href="/mucho-angle-7709/index.html">
             <h2><b>FARFETCH</b></h2>
             </a>
-
           </div>
+          
           <div class="logom">
             <span> <a href="#"><i class="fa-solid fa-flag"></i> </a></span>
             <span><a href="/mucho-angle-7709/Sigup and Login/SignUp_and_LogIn.html"><i class="fa-solid fa-user"></i> </a></span>  
@@ -80,6 +81,8 @@ let navbar = ()=>{
             <input type="text" placeholder="Search" />
           </div></span>
         </div>
+      
+       </div>
       `;
     }
     export default navbar;
