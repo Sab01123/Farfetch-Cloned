@@ -1,11 +1,13 @@
-let data = JSON.parse(localStorage.getItem("itemsData"));
-
+let data = []
+let obj = JSON.parse(localStorage.getItem("itemData"));
+console.log(obj);
+data.push(obj)
 let allRowTotal = 0;
 let sum = 0;
 showData(data);
 var price = 0;
 var total = 0;
-console.log(data);
+// console.log(data);
 function showData(data) {
   let tbody = document.querySelector("tbody");
   tbody.innerHTML = null;
@@ -21,7 +23,7 @@ function showData(data) {
     // td 2
     var td1 = document.createElement("td");
     var img = document.createElement("img");
-    img.src = elem.image_url;
+    img.src = elem.img1;
     img.className = "image";
     td1.append(img);
 
@@ -30,7 +32,7 @@ function showData(data) {
     let p1 = document.createElement("h3");
     let p2 = document.createElement("p");
     p1.innerText = elem.brand;
-    p2.innerText = elem.name;
+    p2.innerText = elem.category;
     td2.append(p1, p2);
 
     // td 3
@@ -150,7 +152,7 @@ function decreseDisplayTotal(sPrice) {
 function deleteData(elem, index) {
   data.splice(index, 1);
   console.log(data);
-  localStorage.setItem("itemsData", JSON.stringify(data));
+  localStorage.setItem("itemData", JSON.stringify(data));
   showData(data);
   window.location.reload();
 }
