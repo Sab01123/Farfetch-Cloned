@@ -7,6 +7,10 @@
     margin-top: 5%;
     gap: 20px;
 }
+a:hover{
+    text-decoration: none;
+    color: black;
+}
 #write{
     margin-top: 15%;
     margin-left: 5%;
@@ -44,7 +48,7 @@ a{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     margin: auto;
-    margin-top: 7%;
+    margin-top: 10%;
     width: 70%;
     
 }
@@ -86,7 +90,7 @@ figure{
     cursor: pointer;
 }
 #button{
-    margin-top: 13%;
+    margin-top: 15%;
 }
 #img{
     width: 95%;
@@ -109,12 +113,14 @@ figure{
   
     font-weight: 200;
     font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
     
 }
 #write2>a p{
     
    
     font-family: Arial, Helvetica, sans-serif; 
+    margin-left: 20px;
 }
 
 #forthDiv{
@@ -134,6 +140,7 @@ figure{
 #h4{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 300;
+    font-size: 20px;
 }
 #p{
     font-family: Arial, Helvetica, sans-serif;
@@ -209,5 +216,13 @@ figure{
 }
 #twoPic2>div>img{
     width: 100%;
+}
+/* #h3{
+    font-size: 15px;
+} */
+
+#nav1{
+    /* margin-top: 5%; */
+    height: 30px;
 }
 
