@@ -33,3 +33,26 @@ console.log(paydata)
     div3.append(country)
     div4.append(phone)
     document.querySelector(".container").append(div, div2, div3, div4,)
+
+
+
+    var btn = document.getElementById("savebtn");
+
+btn.addEventListener("click", function () {
+    
+    var cardNumber = document.getElementById("cardno").value;
+    var ExpiryDate = document.getElementById("exp").value;
+    var Cvv = document.getElementById("code_no").value;
+    
+    if (cardNumber == "" && ExpiryDate == "" && Cvv == "") {
+        alert("Please fill all the fields");
+    }
+    else if(cardNumber.length != 16)
+    {
+        alert("Please Enter correct 16 digit card number")
+    }
+    else {
+        alert("Payment Successful");
+        window.location.href= "../mucho-angle-7709/review.html";
+    }
+})
