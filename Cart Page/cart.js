@@ -1,13 +1,13 @@
 
-import footer from "../Footer/fw17_0093foot.js";
 
+
+// let data = JSON.parse(localStorage.getItem("itemData"));
+
+
+// let data = []
 let data = JSON.parse(localStorage.getItem("itemData"));
-
-
-let data = []
-let obj = JSON.parse(localStorage.getItem("itemData"));
-console.log(obj);
-data.push(obj)
+// console.log(obj);
+// data.push(obj)
 
 let allRowTotal = 0;
 let sum = 0;
