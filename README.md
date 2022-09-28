@@ -37,11 +37,11 @@ Have a look ⬇️
 
 ![App Screenshot](https://miro.medium.com/max/875/1*-rsAvG34cGeHDnwjWcgkzQ.jpeg)
 
-Contributors:
-@Sumit
-@Aman Kumar
-@Aniket
-@Shubham
+##Contributors:
+## @Sumit
+## @Aman Kumar
+## @Aniket
+## @Shubham
 
 ## THANK YOU ❤️
 
