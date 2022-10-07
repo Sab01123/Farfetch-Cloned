@@ -37,23 +37,23 @@ let navbar = () => {
 
         <div id="nav3">
           <div class="items">
-            <a href="./womenpros.html" style="color:
+            <a href="../../womenpros.html" style="color:
             #595853">Sale</a>
           </div>
           <div class="items">
-            <a href="./womenpros.html" style="color:
+            <a href="../../womenpros.html" style="color:
             #595853">New In</a>
           </div>
           <div class="items">
-            <a href="./womenpros.html" style="color:
+            <a href="../../womenpros.html" style="color:
             #595853">Shop By</a>
           </div>
           <div class="items">
-            <a href="./womenpros.html" style="color:
+            <a href="../../womenpros.html" style="color:
             #595853">Brands</a>
           </div>
           <div class="items">
-            <a href="./womenpros.html " style="color: 
+            <a href="../../womenpros.html " style="color: 
             #595853">Clothing</a>
           </div>
           <div class="items">
