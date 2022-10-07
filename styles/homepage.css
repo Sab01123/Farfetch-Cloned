@@ -2,6 +2,8 @@
   body,
   html {
     font-family: var(--fontNormal);
+    padding: 0;
+    margin: 0;
   }
 
   /* #navbar{

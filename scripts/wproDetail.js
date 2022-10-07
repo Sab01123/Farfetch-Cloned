@@ -64,15 +64,15 @@ function displayData(data) {
 
 // Add to cart funtion here--------------------------
 function goToCart(data) {
-    let arr =JSON.parse(localStorage.getItem("itemData"))|| [];
-    arr.push(data);
-    localStorage.setItem("itemData", JSON.stringify(arr));
-    window.location.href = "./Cart Page/cart.html";
+  let arr = JSON.parse(localStorage.getItem("itemData")) || [];
+  arr.push(data);
+  localStorage.setItem("itemData", JSON.stringify(arr));
+  window.location.href = "./cart-page/cart.html";
 }
 function displayDiscription(data) {
-    let bottom_div = document.createElement("div");
-    
-    let desc = document.createElement("p");
+  let bottom_div = document.createElement("div");
+
+  let desc = document.createElement("p");
   desc.textContent = data.desc;
 
   let brand = document.createElement("p");
