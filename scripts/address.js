@@ -30,7 +30,7 @@ function myfun(event) {
   ) {
     alert("Please Fill all the information");
   } else {
-    window.location.href = ".../payment.html";
+    window.location.href = "../payment.html";
   }
 }
 

@@ -46,7 +46,7 @@ btn.addEventListener("click", function () {
     alert("Please Enter correct 16 digit card number");
   } else {
     alert("Payment Successful");
-    window.location.href = ".../review.html";
+    window.location.href = "../review.html";
   }
 });
 
